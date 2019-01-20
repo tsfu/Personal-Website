@@ -48,7 +48,7 @@ body{
 
 @media(max-width:1028px){
 	
-	body{
+	h1,h2,h3,p{
 		font-size:200%;
 	}		
 	
