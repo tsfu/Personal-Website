@@ -47,6 +47,11 @@ body{
 }
 
 @media(max-width:1028px){
+	
+	body{
+		font-size:200%;
+	}		
+	
 	#slogan{
 		font-size:3rem;
 		line-height:1.5;
