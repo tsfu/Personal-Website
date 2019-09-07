@@ -1,6 +1,6 @@
 ## Tianshuang Fu's personal Site: introduction ##
 
-### This is my personal website used as a resume of mine.### 
+### This is my personal website used as a resume of mine. ### 
 
 ### It was first built during the time that I was learning html and css. ###
 
