@@ -20,7 +20,6 @@ body{
 
 .navbar-brand{
 	font-size:2rem;
-	font-weight:bold;
 }
 
 .nav-item{
@@ -115,7 +114,7 @@ p{
 	width:450px;
 	height:300px;
 	border-radius:100%;
-	margin:2% 0% 2% 0%;
+	margin:2% 0% 4% 0%;
 	transition: all .5s ease-in-out;
 }
 
@@ -174,7 +173,7 @@ p{
 	line-height: 3rem;
 }
 .org-img{
-	margin:50px 30px 40px;	
+	margin:50px 20px 40px;	
 }
 .org-img:hover{
 	transform: scale(1.2);
@@ -221,7 +220,7 @@ p{
 
 #follow-slogan{
 	text-align:center;
-	margin:1% 0 1%;
+	margin:3% 0 3%;
 	line-height:1.25rem;
 }
 
