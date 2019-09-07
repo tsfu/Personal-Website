@@ -47,6 +47,9 @@ body{
 }
 
 @media(max-width:1028px){
+	body{
+		font-size:200%;
+	}
 	
 	#slogan{
 		font-size:3rem;
@@ -98,24 +101,25 @@ p{
 	transform:scale(1.2);
 }
 
-.lyrics{
+.desc{
 	color:#F2F2F2; 
-	padding-top:15px;
+	padding: 25px 0 25px;
+	line-height: 3rem;
 }
 
-#artist-img{
-	width:150px;
-	height:200px;
+.city-img{
+	width:450px;
+	height:300px;
 	border-radius:100%;
 	margin:2% 0% 2% 0%;
 	transition: all .5s ease-in-out;
 }
 
-#artist-img:hover{
-	transform:scale(1.15)
+.city-img:hover{
+	transform:scale(1.05)
 }
 
-.art-note{
+.company-note{
 	color:#F2F2F2; 
 	font-size:1.25rem;
 }
@@ -126,9 +130,14 @@ p{
 	padding:4% 0% 2%;
 }
 
-#edu-intro{
-	padding:2rem 0 2rem;
-	color:#888888;
+#edu-slogan{
+	padding: 2rem 0 2rem;
+	color: #888888;
+}
+
+.edu-intro{
+	padding-top: 1.5rem;
+	color: #888888;
 }
 
 .section-icon{
@@ -139,12 +148,34 @@ p{
 	margin:50px 30px 40px;	
 }
 
+.edu-img:hover{
+	transform: scale(1.2);
+}
+
 .edu-intro{
 	margin-top:5px; 
 	color:#888888; 
 	font-weight:light; 
 	font-size:120%;
 }
+
+#org{
+	background-color:#DADADA;
+	text-align:center;
+	padding:4% 0% 2%;
+}
+#org-slogan{
+	padding: 2rem 0 2rem;
+	color: #686868;
+	line-height: 3rem;
+}
+.org-img{
+	margin:50px 30px 40px;	
+}
+.org-img:hover{
+	transform: scale(1.2);
+}
+
 
 #skillset{
 	text-align:center;
@@ -187,7 +218,7 @@ p{
 #follow-slogan{
 	text-align:center;
 	margin:1% 0 1%;
-	line-height;1.25rem;
+	line-height:1.25rem;
 }
 
 .fea{
@@ -203,8 +234,8 @@ p{
 	color:#F07156;
 }
 
-.weibo{
-	color:#E6162D;
+.linkedin{
+	color:#006097;
 }
 
 .wechat{
@@ -224,8 +255,8 @@ p{
 	color:#F07156;
 }
 
-#weibo-txt:hover{
-	color:#E6162D;
+#linkedin-txt:hover{
+	color: #006097;
 }
 
 #wechat-txt:hover{
