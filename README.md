@@ -1,4 +1,4 @@
-## Tianshuang Fu's personal site: introduction ##
+## Tianshuang Fu's personal site: introduction ##  
 
 ### This is my personal website, I'm hosting it here as a resume of mine. ### 
 
@@ -7,3 +7,5 @@
 I will constantly update this website to catch up with my latest personal information and experience. Maybe I would also try some new stuff that I learned about web development here. It is always a good place to integrate cool contents.
 
 Anyway, thank you for coming here!
+
+### Visit website: tsfu.github.io/personal-site  ###
