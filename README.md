@@ -1,9 +1,9 @@
-## Tianshuang Fu's personal Site: introduction ##
+## Tianshuang Fu's personal site: introduction ##
 
-### This is my personal website used as a resume of mine. ### 
+### This is my personal website, I'm hosting it here as a resume of mine. ### 
 
-### It was first built during the time that I was learning html and css. ###
+### It was first built during the time that I was learning html and css with BootStarp 4. ###
 
-I am constantly updating this website to keep up with my latest personal information and experience. Maybe I would also try some new stuff in web development here.
+I will constantly update this website to catch up with my latest personal information and experience. Maybe I would also try some new stuff that I learned about web development here. It is always a good place to integrate cool contents.
 
 Anyway, thank you for coming here!
