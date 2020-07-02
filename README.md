@@ -6,6 +6,4 @@
 
 I will constantly update this website to catch up with my latest personal information and experience. Maybe I would also try some new stuff that I learned about web development here. It is always a good place to integrate cool contents.
 
-Anyway, thank you for coming here!
-
-### Visit website: <tsfu.github.io/personal-site>  ###
+Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io/personal-site)
