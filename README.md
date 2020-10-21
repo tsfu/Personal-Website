@@ -2,8 +2,7 @@
 
 ### This is my personal website, I'm hosting it here as a resume of mine. ### 
 
-### It was first built during the time that I was learning html and css with BootStarp 4. ###
+### It was first built when I was learning html/css/js with BootStarp 4. ###
 
-I will constantly update this website to catch up with my latest personal information and experience. Maybe I would also try some new stuff that I learned about web development here. It is always a good place to integrate cool contents.
-
+I will constantly update this website to share my latest experience. Maybe I will also try some new tricks that I learned about web development here. 
 Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io/personal-site)
