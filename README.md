@@ -1,6 +1,6 @@
 ## Tianshuang Fu's personal site: introduction ##  
 
-### This is my personal website, I'm hosting it here as a resume of mine. ### 
+### This is my personal website, I'm hosting it here as a resume now. Will add more fun contents. ### 
 
 ### It was first built when I was learning html/css/js with BootStarp 4. ###
 
