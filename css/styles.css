@@ -46,14 +46,14 @@ body{
 
 #mainpic{
 	margin-top: 9rem;
-	width: 750px;
-	height: 440px;
+	width: 780px;
+	height: 480px;
 }
 
 #spotify{
 	margin-top: 9rem;
 	width: 100%;
-	height: 425px;
+	height: 480px;
 }
 
 @media(max-width:1028px){
