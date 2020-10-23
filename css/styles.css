@@ -36,6 +36,11 @@ body{
 	padding:11rem 0 1rem;
 }
 
+#sub-slogan{
+	font-weight:light;
+	text-align: center;
+}
+
 #slogan-intro{
 	color:#AFAFAF;
 	font-size:1.75rem;
