@@ -1,8 +1,5 @@
-## Tianshuang Fu's personal site: introduction ##  
+## Tianshuang's Personal Site: Introduction ##  
 
-### This is my personal website, I'm hosting it here as a resume now. Will add more fun contents. ### 
+#### This is my personal website repository. It was first built when I was learning html/css/js with BootStarp 4 in Fall 2018. I plan to constantly update it while learning new web programming technology and skills. The site will be a good place to know about me and my recent situations.####
 
-### It was first built when I was learning html/css/js with BootStarp 4. ###
-
-I will constantly update this website to share my latest experience. Maybe I will also try some new tricks that I learned about web development here. 
-Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io/personal-site)
+#### Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io/personal-site) ####
