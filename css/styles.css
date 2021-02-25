@@ -27,7 +27,8 @@ body{
 }
 
 .nav-link{
-	font-size: 90%
+	font-size: 90%;
+	margin-right: 10px;
 }
 
 #slogan{
