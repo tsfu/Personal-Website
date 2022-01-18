@@ -87,7 +87,7 @@ p{
 }
 
 .carousel-item{
-	padding:4rem 5rem 5rem;
+	padding: 7rem 5rem;
 }
 
 .slide-title{
@@ -108,8 +108,8 @@ p{
 }
 
 .city-img{
-	width:450px;
-	height:300px;
+	width:250px;
+	height:250px;
 	border-radius:100%;
 	margin:2% 0% 4% 0%;
 	transition: all .5s ease-in-out;
