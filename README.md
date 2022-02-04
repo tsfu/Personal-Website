@@ -9,5 +9,6 @@ Update Log:
   - Oct 2019: Added summer internships and new school projects to slides section. Nav-Bar re-designed to host Chinese version resume.
   - Sep 2020: Added a new internship company, updated resume links for both English and Chinese versions.
   - Dec 2020: Integrated my Spotify playlist, updated resumes.
-  - Feb 2021: fixed some responsive display issues, updated resumes, added an OS project to slides.
+  - Feb 2021: Fixed some responsive display issues, updated resumes, added an OS project to slides.   
+  - Feb 2022: Added new slide for career updates, changed some photos in slides.
 
