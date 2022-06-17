@@ -12,24 +12,26 @@ body{
 	padding: 2% 3% 4%;
 }
 
+/* ==================== Nav Bar ===================== */
+
 .navbar{
 	font-size:1.5rem;
 	background-color:#222222;
 	padding:0.75rem 0 1.25rem 2.5rem;
 }
-
 .navbar-brand{
 	font-size:2rem;
 }
-
 .nav-item{
 	padding: 0 20px 0 0;
 }
-
 .nav-link{
 	font-size: 90%;
 	margin-right: 10px;
 }
+
+
+/* ============================= Cover ====================== */
 
 #slogan{
 	font-size: 3.3rem;
@@ -37,12 +39,10 @@ body{
 	padding: 10rem 0 1rem;
 	margin-left: 30px;
 }
-
 #sub-slogan{
 	font-weight:light;
 	margin-left: 30px;
 }
-
 #slogan-intro{
 	color:#AFAFAF;
 	font-size:1.5rem;
@@ -70,22 +70,21 @@ body{
 	margin-top: 35px;
 	margin-left: 30px;
 }
-
 .btn-lg{
 	margin: 5px 5px 5px 0;
 }
-
 p{
 	font-weight:light;
 	color:#A2A2A2;
 }
+
+/* ========================== Slide Highlights ========================== */
 
 #testimonials{
 	background-color:#7D7D7D;
 	text-align:center;
 	line-height:1.5rem;
 }
-
 .carousel-item{
 	padding: 7rem 5rem;
 }
@@ -96,11 +95,9 @@ p{
 	color:#EDEDED;
 	transition: all .5s ease-in-out;
 }
-
 .slide-title:hover{
 	transform:scale(1.2);
 }
-
 .desc{
 	color:#F2F2F2; 
 	padding: 25px 0 25px;
@@ -114,7 +111,6 @@ p{
 	margin:2% 0% 4% 0%;
 	transition: all .5s ease-in-out;
 }
-
 .city-img:hover{
 	transform:scale(1.05)
 }
@@ -124,60 +120,65 @@ p{
 	font-size:1.25rem;
 }
 
-#edu{
+
+/* ================================ Education ========================*/
+
+#edu {
 	background-color:#F2F2F2;
 	text-align:center;
 	padding:4% 0% 2%;
 }
-
-#edu-slogan{
+#edu-slogan {
 	padding: 2rem 0 2rem;
 	color: #888888;
 }
-
-.edu-intro{
+.edu-intro {
 	padding-top: 1.5rem;
 	color: #888888;
 }
-
-.section-icon{
+.section-icon {
 	padding-bottom:20px;
 }
-
-.edu-img{
+.edu-img {
 	margin:50px 30px 40px;	
 }
-
-.edu-img:hover{
+.edu-img:hover {
 	transform: scale(1.2);
 }
-
-.edu-intro{
+.edu-intro {
 	margin-top:5px; 
 	color:#888888; 
 	font-weight:light; 
 	font-size:120%;
 }
 
-#org{
+/* =========================== Company ============================== */
+
+#org {
 	background-color:#DADADA;
 	text-align:center;
 	padding:4% 0% 2%;
 }
-#org-slogan{
+#org-slogan {
 	padding: 2rem 0 2rem;
 	color: #686868;
 	line-height: 3rem;
 }
-.org-img{
+.company-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.org-img {
 	margin:50px 20px 40px;	
 	height:150px; 
 	width:150px;
 }
-.org-img:hover{
+.org-img:hover {
 	transform: scale(1.2);
 }
 
+/* ======================== Skillset ========================= */
 
 #skill-section {
 	text-align:center;
@@ -185,40 +186,41 @@ p{
 	padding:6rem 2rem 4rem;
 	background-color:#326b8b;
 }
-
 .skill-text {
 	color:#EAEAEA;
 }
-
 #skill-heading {
 	padding-bottom:2em;
 	
 }
-
 #skill-intro {
 	padding-bottom:3em;
 }
-
 .skill-icon-row {
 	margin-top: 2em;
 }
-
 #skill-footer {
 	padding-top:2em;
 }
+
+/* ======================== Social media ======================= */
 
 #features{
 	color:#222222;
 	background-color:#EFEFEF;
 	padding-top:1%;
 }
-
 #follow-slogan{
 	text-align:center;
-	margin:3% 0 3%;
+	margin:2% 0 2%;
 	line-height:1.25rem;
 }
 
+.media-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .fea{
 	text-align:center;
 	padding:3%;
@@ -227,15 +229,15 @@ p{
 .fb{
 	color:#4867AA;
 }
-
 .ins{
 	color:#F07156;
 }
-
 .linkedin{
 	color:#006097;
 }
-
+.github {
+	color:#340365;
+}
 .wechat{
 	color:#07C563;
 }
@@ -248,15 +250,15 @@ p{
 #fb-txt:hover{
 	color:#4867AA;
 }
-
 #ins-txt:hover{
 	color:#F07156;
 }
-
 #linkedin-txt:hover{
 	color: #006097;
 }
-
+#github-txt:hover{
+	color:#340365;
+}
 #wechat-txt:hover{
 	color:#07C563;
 }
@@ -265,13 +267,14 @@ a:hover{
 	text-decoration: none;
 }
 
+/* ============================ Footer ========================== */
+
 .footer{
 	background-color:#283E4A;
 	color:#AFAFAF;
 	text-align:center; 
 	padding: 20px 0 20px
 }
-
 .footer-txt{
 	font-family:"Montserrat", sans-serif;
 	line-height: 2rem;
