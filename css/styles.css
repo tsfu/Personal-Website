@@ -179,40 +179,32 @@ p{
 }
 
 
-#skill-section{
+#skill-section {
 	text-align:center;
 	line-height:1.25rem;
 	padding:6rem 2rem 4rem;
-	background-color:#364e68;
+	background-color:#326b8b;
 }
 
-#skill-heading{
-	padding-bottom:2rem;
+.skill-text {
 	color:#EAEAEA;
 }
 
-#skill-intro{
-	padding-bottom:3rem;
-	color:#EAEAEA;
+#skill-heading {
+	padding-bottom:2em;
+	
 }
 
-.skill-name{
-	background-color:#98ccd3;
-	color:#FDFDFD;
+#skill-intro {
+	padding-bottom:3em;
 }
 
-.skill-para{
-	background-color:#132238;
-	font-size: 1.5rem;
+.skill-icon-row {
+	margin-top: 2em;
 }
 
-.skillset{
-	margin: 25px 0 25px 0;
-}
-
-.skill-icon{
-	color:#98ccd3;
-	padding: 1.5rem 0 1.5rem;
+#skill-footer {
+	padding-top:2em;
 }
 
 #features{
