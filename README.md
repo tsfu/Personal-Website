@@ -10,5 +10,6 @@ Update Log:
   - Sep 2020: Added a new internship company, updated resume links for both English and Chinese versions.
   - Dec 2020: Integrated my Spotify playlist, updated resumes.
   - Feb 2021: Fixed some responsive display issues, updated resumes, added an OS project to slides.   
-  - Feb 2022: Added new slide for career updates, changed some photos in slides.
+  - Feb 2022: Added new slide for career updates, changed some photos in slides.    
+  - Jun 2022: Update to use icon gallery in skill section. Added Github link. Adopted flex in some CSS.
 
