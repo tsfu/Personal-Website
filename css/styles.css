@@ -1,7 +1,13 @@
 
 /* =================== General styles ================== */
 
-body {
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 	color:#222222;
 	font-family:'Russo One', sans-serif;
 }
@@ -61,6 +67,9 @@ a:hover {
 	color: #A2A2A2;
 	font-size: 1.5rem;
 	padding-right: 1em;
+}
+.nav-btn:hover {
+	color: #07C563;
 }
 
 /* ============================= Cover ====================== */
@@ -123,7 +132,7 @@ a:hover {
 	margin: 5px 5px 5px 0;
 }
 
-/* ========================== Slide Highlights ========================== */
+/* ======================== Slide Highlights ======================= */
 
 #slides {
 	background-color:#7D7D7D;
@@ -131,12 +140,12 @@ a:hover {
 	line-height:1.5rem;
 }
 .carousel-item {
-	padding: 7rem 5rem;
+	padding: 5rem;
 }
 
 .slide-title {
 	font-weight:bold; 
-	margin-bottom:15px; 
+	margin-bottom: 1rem; 
 	color:#EDEDED;
 	transition: all .5s ease-in-out;
 }
@@ -145,14 +154,14 @@ a:hover {
 }
 .slide-intro {
 	color:#F2F2F2; 
-	padding: 25px 0 25px;
+	padding: 1rem 0;
 	line-height: 3rem;
 }
 .slide-img {
-	width:250px;
-	height:250px;
+	width:300px;
+	height:300px;
 	border-radius:100%;
-	margin:2% 0% 4% 0%;
+	margin: 2rem 0 4rem;
 	transition: all .5s ease-in-out;
 }
 .slide-img:hover {
@@ -161,6 +170,7 @@ a:hover {
 .slide-footnote {
 	color:#F2F2F2; 
 	font-size:1.25rem;
+	margin-top: 2rem;
 }
 
 
@@ -240,6 +250,9 @@ a:hover {
 #skill-intro {
 	padding-bottom:2rem;
 	color:#e9e9e9;
+}
+#skill-icons {
+	padding: 1rem;
 }
 .skill-icons-row {
 	margin-top: 1.5rem;
@@ -321,7 +334,7 @@ a:hover {
 	background-color:#283E4A;
 	color:#AFAFAF;
 	text-align:center; 
-	padding: 20px 0 20px
+	padding: 1rem 0;
 }
 .footer-txt {
 	font-family:"Montserrat", sans-serif;
@@ -330,7 +343,7 @@ a:hover {
 
 
 
-/* ========================= For mobile/tablet =================== */
+/* ================== For mobile/tablet experience =============== */
 @media screen and (max-width: 1000px) {
 	#spotify {
 		margin:auto;
@@ -339,9 +352,8 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
-
-	#nav-bar,
-	#slogan, #sub-slogan, 
+	
+	#nav-bar, 
 	#mainpic,
 	#skill-icons{
 		display: none;
@@ -349,39 +361,39 @@ a:hover {
 
 	#mb-nav-bar {
 		height: 2.5rem;
-		width: 100vw;
+		width: 100%;
 		position:fixed;
 		z-index: 999;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-around;
 		background-color:#222222;
 	}
 	#mb-nav-logo {
 		font-size: 1.25rem;	
 		font-style: italic;
 		color: #e9e9e9;
-		padding-left: 1rem;
+		padding-right: 1rem;
 	}
-	#mb-nav-btn {
+	.mb-nav-btn {
 		font-size: 1rem;
 		color: #A2A2A2;
-		padding-right: 1rem;
 	}	
+	
 
 	#mobile-mainpic {
-		margin: -2rem auto -0.5rem;
+		margin: -2.2rem auto -0.5rem;
 		display: block;
-		max-width: 95vw;
+		max-width: 100%;
 		height: auto;
 	}
 
-	#slogan-intro {
-		padding-top: 1rem;
+	#slogan, #sub-slogan {
+		font-weight: 100;
+		font-size: 1.25rem;		
 	}
-
-	#spotify {
-		margin-top: 1rem;
+	#slogan, #slogan-intro, #spotify {
+		padding-top: 1rem;
 	}
 
 	.btn-bar {
@@ -391,6 +403,25 @@ a:hover {
 		align-items: center;
 		justify-content: space-around;
 	}
+	.headline-btn {
+		width: 60vw;
+	}
+
+	.carousel-item {
+		padding: 4rem 2rem;
+	}
+	.slide-title{
+		font-size: 1.25rem;
+		font-weight: 100;
+	}
+	.slide-intro,.slide-footnote {
+		font-size: 0.5rem;
+		font-weight: 20;
+	}
+	.slide-intro {
+		text-align: left;
+		line-height: 1.5rem;
+	}
 
 	#mb-skill-icons {
 		display: block;
@@ -398,6 +429,11 @@ a:hover {
 	#skill-footer {
 		font-weight: 100;
 		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	.footer-txt {
+		font-size: 0.75rem;
 		line-height: 1.5rem;
 	}
   }
