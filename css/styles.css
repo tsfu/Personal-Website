@@ -1,48 +1,60 @@
-#title{
-	background-color:#313131;
-	color:#FFFFFF;	
-}
 
-body{
+/* =================== General styles ================== */
+
+body {
 	color:#222222;
 	font-family:'Russo One', sans-serif;
 }
 
-.container-fluid{
-	padding: 2em 3em 3em;
+p {
+	font-weight:light;
+	color:#A2A2A2;
 }
 
-/* ==================== Nav Bar ===================== */
+a:hover {
+	text-decoration: none;
+}
 
-.navbar{
+.container-fluid {
+	padding: 2rem 3rem 3rem;
+}
+
+/* =========================== Nav Bar ===================== */
+
+.navbar {
 	font-size:1.5rem;
 	background-color:#222222;
 	padding:0.75rem 0 1.25rem 2.5rem;
 }
-.navbar-brand{
+.navbar-brand {
 	font-size:2rem;
 }
-.nav-item{
+.nav-item {
 	padding: 0 20px 0 0;
 }
-.nav-link{
+.nav-link {
 	font-size: 90%;
 	margin-right: 10px;
 }
 
 /* ============================= Cover ====================== */
 
-#slogan{
+#title {
+	background-color:#313131;
+	color:#FFFFFF;	
+}
+
+#slogan {
 	font-size: 3.3rem;
 	line-height: 1.5;
 	padding: 10rem 0 1rem;
 	margin-left: 30px;
 }
-#sub-slogan{
+#sub-slogan {
 	font-weight:light;
 	margin-left: 30px;
 }
-#slogan-intro{
+#slogan-intro {
 	color:#AFAFAF;
 	font-size:1.5rem;
 	font-weight:light;
@@ -51,7 +63,7 @@ body{
 	margin-left: 30px;
 }
 
-#mainpic{
+#mainpic {
 	margin-top: 9rem;
 	width: 780px;
 	height: 480px;
@@ -59,62 +71,57 @@ body{
 	max-height: 100%;
 }
 
-#spotify{
+#spotify {
 	margin-top: 9rem;
 	width: 100%;
 	height: 480px;
 }
 
-.btn-bar{
+.btn-bar {
 	margin-top: 35px;
 	margin-left: 30px;
 }
-.btn-lg{
+.btn-lg {
 	margin: 5px 5px 5px 0;
-}
-p{
-	font-weight:light;
-	color:#A2A2A2;
 }
 
 /* ========================== Slide Highlights ========================== */
 
-#testimonials{
+#slides {
 	background-color:#7D7D7D;
 	text-align:center;
 	line-height:1.5rem;
 }
-.carousel-item{
+.carousel-item {
 	padding: 7rem 5rem;
 }
 
-.slide-title{
+.slide-title {
 	font-weight:bold; 
 	margin-bottom:15px; 
 	color:#EDEDED;
 	transition: all .5s ease-in-out;
 }
-.slide-title:hover{
+.slide-title:hover {
 	transform:scale(1.2);
 }
-.desc{
+.desc {
 	color:#F2F2F2; 
 	padding: 25px 0 25px;
 	line-height: 3rem;
 }
 
-.city-img{
+.city-img {
 	width:250px;
 	height:250px;
 	border-radius:100%;
 	margin:2% 0% 4% 0%;
 	transition: all .5s ease-in-out;
 }
-.city-img:hover{
+.city-img:hover {
 	transform:scale(1.05)
 }
-
-.company-note{
+.company-note {
 	color:#F2F2F2; 
 	font-size:1.25rem;
 }
@@ -206,78 +213,78 @@ p{
 
 /* ======================== Social media ======================= */
 
-#social-media{
+#social-media {
 	color:#222222;
 	background-color:#EFEFEF;
 	padding-top:1rem;
 }
-#follow-slogan{
+#follow-slogan {
 	text-align: center;
 	color:#454545;
 	margin: 2rem;
 	line-height: 3rem;
 }
 
-.media-box{
+.media-box {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
-.social-app{
+.social-app {
 	text-align:center;
 	padding: 1.5rem;
 }
+.social-app:hover {
+	transform: scale(1.25);
+}
 
-.fb{
+.fb {
 	color:#4867AA;
 }
-.ins{
+.ins {
 	color:#F07156;
 }
-.linkedin{
+.linkedin {
 	color:#006097;
 }
 .github {
 	color:#420a7b;
 }
-.wechat{
+.wechat {
 	color:#07C563;
 }
 
-.social{
+.app-name {
 	padding-top:7px;
 	color:#222222;
 }
 
-#fb-txt:hover{
+#fb-txt:hover {
 	color:#4867AA;
 }
-#ins-txt:hover{
+#ins-txt:hover {
 	color:#F07156;
 }
-#linkedin-txt:hover{
+#linkedin-txt:hover {
 	color: #006097;
 }
-#github-txt:hover{
+#github-txt:hover {
 	color:#420a7b;
 }
-#wechat-txt:hover{
+#wechat-txt:hover {
 	color:#07C563;
 }
 
-a:hover{
-	text-decoration: none;
-}
 
 /* ============================ Footer ========================== */
 
-.footer{
+.footer {
 	background-color:#283E4A;
 	color:#AFAFAF;
 	text-align:center; 
 	padding: 20px 0 20px
 }
-.footer-txt{
+.footer-txt {
 	font-family:"Montserrat", sans-serif;
 	line-height: 2rem;
 }
