@@ -1,7 +1,7 @@
 ### Tianshuang's Personal Site: Introduction ###
 This is my personal website repository. It was first built when I was learning html/css/js with BootStarp 4 in Fall 2018. I plan to constantly update it while learning new web programming technology and skills. The site will be a good place to know about me and my recent situations. 
 
-#### Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io/personal-site) ####
+#### Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io) ####
 
 Update Log:
   - Jan 2019: Website was first created. All html and css files are wriiten by my own, referring Udemy "Web Development" course taught by Angela.
@@ -13,6 +13,7 @@ Update Log:
   - Feb 2022: Added new slide for career updates, changed some photos in slides.    
   - Jun 2022: Update to use icon gallery in skill section. Added Github link. Adopted flex in some CSS.   
   - Jun 2022: Update styles for mobile experience. Update to font awesome v6.1.1. Update links to open in new tab.   
+  - Jun 2022: Update url to remove repo name suffix.   
 
 
 TODOs:
