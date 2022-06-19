@@ -1,0 +1,95 @@
+/* ================== For mobile/tablet experience =============== */
+@media screen and (max-width: 1000px) {
+	#spotify {
+		margin:auto;
+		width: 90vw;
+	} 
+}
+
+@media screen and (max-width: 800px) {
+	
+	#nav-bar, 
+	#mainpic,
+	#skill-icons{
+		display: none;
+	}
+
+	#mb-nav-bar {
+		height: 2.5rem;
+		width: 100%;
+		position:fixed;
+		z-index: 999;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		background-color:#222222;
+	}
+	#mb-nav-logo {
+		font-size: 1.25rem;	
+		font-style: italic;
+		color: #e9e9e9;
+		padding-right: 1rem;
+	}
+	.mb-nav-btn {
+		font-size: 1rem;
+		color: #A2A2A2;
+	}	
+	
+
+	#mobile-mainpic {
+		margin: -2.2rem auto -0.5rem;
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+
+	#slogan, #sub-slogan {
+		font-weight: 100;
+		font-size: 1.4rem;		
+	}
+	#slogan, #slogan-intro, #spotify {
+		padding-top: 1rem;
+	}
+	#slogan-intro {
+		font-size: 1.5rem;
+	}
+	.btn-bar {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.headline-btn {
+		width: 60vw;
+	}
+
+	.carousel-item {
+		padding: 4rem 2rem;
+	}
+	.slide-title{
+		font-size: 2rem;
+		font-weight: 100;
+	}
+	.slide-intro {
+		text-align: center;
+		font-family:"Montserrat", sans-serif;	
+		font-size: 1.4rem;
+		line-height: 2rem;
+		font-weight: 30;
+	}
+
+	#mb-skill-icons {
+		display: block;
+	}
+	#skill-footer {
+		font-weight: 100;
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	.footer-txt {
+		font-size: 0.75rem;
+		line-height: 1.5rem;
+	}
+  }

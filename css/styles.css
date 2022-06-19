@@ -103,8 +103,8 @@ a:hover {
 }
 #slogan-intro {
 	color:#AFAFAF;
-	font-size:1.5rem;
-	font-weight:light;
+	font-family: 'Permanent Marker', cursive;
+	font-size:2rem;
 	line-height:1.5;
 	padding:3rem 0 1rem;
 }
@@ -125,8 +125,6 @@ a:hover {
 
 .btn-bar {
 	margin-top: 2rem;
-	display: flex;
-	justify-content: space-around;
 }
 .btn-lg {
 	margin: 5px 5px 5px 0;
@@ -341,99 +339,3 @@ a:hover {
 	line-height: 2rem;
 }
 
-
-
-/* ================== For mobile/tablet experience =============== */
-@media screen and (max-width: 1000px) {
-	#spotify {
-		margin:auto;
-		width: 90vw;
-	} 
-}
-
-@media screen and (max-width: 800px) {
-	
-	#nav-bar, 
-	#mainpic,
-	#skill-icons{
-		display: none;
-	}
-
-	#mb-nav-bar {
-		height: 2.5rem;
-		width: 100%;
-		position:fixed;
-		z-index: 999;
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		background-color:#222222;
-	}
-	#mb-nav-logo {
-		font-size: 1.25rem;	
-		font-style: italic;
-		color: #e9e9e9;
-		padding-right: 1rem;
-	}
-	.mb-nav-btn {
-		font-size: 1rem;
-		color: #A2A2A2;
-	}	
-	
-
-	#mobile-mainpic {
-		margin: -2.2rem auto -0.5rem;
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
-
-	#slogan, #sub-slogan {
-		font-weight: 100;
-		font-size: 1.25rem;		
-	}
-	#slogan, #slogan-intro, #spotify {
-		padding-top: 1rem;
-	}
-
-	.btn-bar {
-		margin-top: 1rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-	}
-	.headline-btn {
-		width: 60vw;
-	}
-
-	.carousel-item {
-		padding: 4rem 2rem;
-	}
-	.slide-title{
-		font-size: 1.25rem;
-		font-weight: 100;
-	}
-	.slide-intro,.slide-footnote {
-		font-size: 0.5rem;
-		font-weight: 20;
-	}
-	.slide-intro {
-		text-align: left;
-		line-height: 1.5rem;
-	}
-
-	#mb-skill-icons {
-		display: block;
-	}
-	#skill-footer {
-		font-weight: 100;
-		font-size: 1rem;
-		line-height: 1.5rem;
-	}
-
-	.footer-txt {
-		font-size: 0.75rem;
-		line-height: 1.5rem;
-	}
-  }
