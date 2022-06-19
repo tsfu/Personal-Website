@@ -11,5 +11,11 @@ Update Log:
   - Dec 2020: Integrated my Spotify playlist, updated resumes.
   - Feb 2021: Fixed some responsive display issues, updated resumes, added an OS project to slides.   
   - Feb 2022: Added new slide for career updates, changed some photos in slides.    
-  - Jun 2022: Update to use icon gallery in skill section. Added Github link. Adopted flex in some CSS.
+  - Jun 2022: Update to use icon gallery in skill section. Added Github link. Adopted flex in some CSS.   
+  - Jun 2022: Update styles for mobile experience. Update to font awesome v6.1.1. Update links to open in new tab.   
 
+
+TODOs:
+  - Get rid of Bootstrap v4 (update or remove).
+  - Better interactions/animations for mobile UX.
+  - Use responsive elements instead of @media query. (also because of Bootstrap v4 not ideal anymore here...)
