@@ -4,46 +4,47 @@
  <head>
    <meta charset="utf-8">
    <meta name="google-site-verification" content="LrvmeY2erLB8zreoAyLUqC_nuHUOVn659CFaA2jn0Oo" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <title>Tianshuang's Site</title> 
    <!--CSS-->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
    <link rel="stylesheet" href="css/styles.css"> 
    <!--icon-->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="icon" href="favicon.ico">
-   <!--js-->
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<!--js-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
    <!--Google font-->
    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,400i|Russo+One" rel="stylesheet">
  </head>
  
  <body>	
 	<!-- nav bar -->
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark">			
-		<a href="#slogan" class="navbar-brand" style="color:white;">TIANSHUANG (JOE) FU</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" style="margin-right: 30px;">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarToggler">      
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="tsfu_resume.pdf"><i class="fas fa-globe-americas"></i> Résumé</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="mailto:tsfu@outlook.com"><i class="fas fa-envelope-open"></i> EMAIL ME</a>
-				</li>
-			</ul>      
-		</div>   
-	</nav>
+	<section id="top-bar">
+		<nav id="nav-bar">			
+			<a href="#slogan" id="nav-logo">TIANSHUANG (JOE) FU</a>
+			<div id="nav-menu" >      
+				<a class="nav-btn" href="tsfu_resume.pdf"><i class="fa-solid fa-file-lines"></i></i> Résumé</a>
+				<a class="nav-btn" href="mailto:tsfu@outlook.com"><i class="fas fa-envelope"></i> Email</a>
+			</div>   
+		</nav>
+		<nav id="mb-nav-bar" class="for-mobile" >			
+			<a href="#slogan" id="mb-nav-logo">TSFU</a>  
+			<a href="mailto:tsfu@outlook.com" id="mb-nav-btn"><i class="fa-solid fa-file-lines"></i> Résumé</a>   
+			<a href="#social-media" id="mb-nav-btn"><i class="fas fa-paper-plane"></i> Follow</a> 
+		</nav>
+	</section>
+
 	
 	<!--headline-->
 	<section id="title">
-		<div class="container-fluid">   
-			<div class="headline-flexbox">
-				<div>
-					<h1 id="slogan">Finally, you are here.</h1>
+		<img id="mobile-mainpic" class="for-mobile" src="images/Cobain.gif" alt="Cobain">		
+		<div class="section-container">   
+			<div class="headline-box flex-box">
+				<div id="slogan-container">
+					<h1 id="slogan">Finally, you are here.</h1>				
 					<h2 id="sub-slogan">Wanna try my playlist? </h2>
 					<h2 id="slogan-intro">"I think I'm dumb, or maybe just happy." <br>- Kurt Cobain, 《Dumb》, 1993.</h2>
 					<div class="btn-bar">
@@ -77,53 +78,53 @@
 	  
 	    <div class="carousel-inner">
 			<div class="carousel-item active container-fluid" style="background-color:#439bb6;">
-				<a class="text-muted" href="">
+				<a class="text-muted" href="https://goo.gl/maps/bm3qkXHJeWQ2n5mx6" target="_blank" target="_blank">
 					<h2 class="slide-title"> Kendall Square - Cambridge, MA</h2>
-					<h4 class="desc"> HealthShare <br> 
-						Full-stack developer at HealthShare Operations scrum team. Getting better at ObjectScript, Angular, REST and SQL.</h4>
-					<img class="city-img" src="images/OMD.jpg" alt="intersystems-healthshare">
+					<h4 class="slide-intro"> HealthShare: Full-stack developer <br> 
+						HealthShare Information Exchange Operations scrum team. Getting better at ObjectScript, Angular, REST APIs and SQL.</h4>
+					<img class="slide-img" src="images/OMD.jpg" alt="intersystems-healthshare">
 				</a><br>	 
-				<em class="company-note">@ One Memorial Drive, InterSystems Corporation</em>
+				<em class="slide-footnote">@ One Memorial Drive, InterSystems Corporation</em>
 			</div>
 
 			<div class="carousel-item container-fluid" style="background-color:#5f9c6e;">
-				<a class="text-muted" href="">
+				<a class="text-muted" href="https://g.page/evophilly?share" target="_blank" target="_blank">
 					<h2 class="slide-title"> Philly - During COVID Lockdown</h2>
-					<h4 class="desc"> PennOS: a UNIX style operating system, <br> 
+					<h4 class="slide-intro"> PennOS: a UNIX style operating system, <br> 
 						designed & implemented an OS with a kernel, a shell, a file system, process management, and virtual memory. </h4>
-					<img class="city-img" src="images/philly.jpg" alt="Philly">
+					<img class="slide-img" src="images/philly.jpg" alt="Philly">
 				</a><br>	 
-				<em class="company-note">@ Evo Philly, my lovely shelter during COVID lockdown</em>
+				<em class="slide-footnote">@ Evo Philly, my lovely shelter during COVID lockdown</em>
 			</div>
 			
 			<div class="carousel-item container-fluid" style="background-color:#96764c;">
-				<a class="text-muted" href="">
+				<a class="text-muted" href="https://goo.gl/maps/Qn59TECNsRp3Ss7r9" target="_blank" target="_blank">
 					<h2 class="slide-title"> Chengdu, Sichuan, China - Summmer 2019</h2>
-					<h4 class="desc"> Front-end web development intern, <br> 
+					<h4 class="slide-intro"> Front-end web development intern, <br> 
 						implemented webpages and APIs for cloud testing application using Angular framework. </h4>
-					<img class="city-img" src="images/cd.jpg" alt="Chengdu">
+					<img class="slide-img" src="images/cd.jpg" alt="Chengdu">
 				</a><br>	 
-				<em class="company-note">@ Huawei Technologies, Cloud & AI Services Department </em>
+				<em class="slide-footnote">@ Huawei Technologies, Cloud & AI Services Department </em>
 			</div>
 		
 			<div class="carousel-item container-fluid" style="background-color:#8177b9;">			
-				<a class="text-muted" href="">
+				<a class="text-muted" href="https://goo.gl/maps/4r98sfo7r3PqBdAV8" target="_blank" target="_blank">
 					<h2 class="slide-title"> UPenn - Philadelphia, PA - Spring 2019 </h2>			
-					<h4 class="desc"> Full stack web application design program, <br>
+					<h4 class="slide-intro"> Full stack web application design program, <br>
 						web application connected to several large scale, cloud hosting databases(MySql and MongoDB). </h4>
-					<img class="city-img" src="images/penn-eng.jpg" alt="penn-eng">
+					<img class="slide-img" src="images/penn-eng.jpg" alt="penn-eng">
 				</a><br>	 
-				<em class="company-note">@ Univ. of Penn, Department of Computer & Information Science</em>
+				<em class="slide-footnote">@ Univ. of Penn, Department of Computer & Information Science</em>
 			</div>
 		
 			<div class="carousel-item container-fluid" style="background-color:#9c5757;">
-				<a class="text-muted" href="">
+				<a class="text-muted" href="https://goo.gl/maps/61on9ctf1gJPEUys6" target="_blank" target="_blank">
 					<h2 class="slide-title"> Xi'an, Shaanxi, China - Spring 2018 </h2>
-					<h4 class="desc"> Implemented human eye gaze estimation algorithm,<br> 
+					<h4 class="slide-intro"> Implemented human eye gaze estimation algorithm,<br> 
 						 optimized its accurancy by 10%, now available for desktop applications.</h4>
-					<img class="city-img" src="images/xj.jpg" alt="Xi'an">
+					<img class="slide-img" src="images/xj.jpg" alt="Xi'an">
 				</a><br>	 
-				<em class="company-note">@ Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University</em>
+				<em class="slide-footnote">@ Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University</em>
 			</div>	  
 		</div>
 		<a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
@@ -137,12 +138,12 @@
  
 	<!-- education and experiences -->
 	<section id="edu">
-		<div class="container-fluid">
+		<div class="section-container">
 			<h2><i class="fas fa-graduation-cap fa-2x section-icon"></i><br>Education Background</h2>
 			<h3 id="edu-slogan">These are not just titles, but also experiences.</h3>
 			<div class="row">
 				<div class="col-lg-6">
-					<a href="http://www.xjtu.edu.cn">
+					<a href="http://www.xjtu.edu.cn" target="_blank">
 						<img class="edu-img" src="images/XJTU.png" alt="xjtu-logo" style="height:90px; width:90px;">
 					</a>
 					<h3> Bachelor of Engineering in Automation</h3>
@@ -150,7 +151,7 @@
 						Awarded "Siyuan" Scholarship</p>
 				</div>
 				<div class="col-lg-6">
-					<a href="https://upenn.edu">
+					<a href="https://upenn.edu" target="_blank">
 						<img class="edu-img" src="images/PENN.png" alt="penn-logo" style="height:80px; width:290px;">
 					</a>
 					<h4 style="margin-top:10px;"> Master of Computer & Information Technology </h4>
@@ -163,37 +164,37 @@
 
 	<!-- company -->
 	<section id="org">
-		<div class="container-fluid">
+		<div class="section-container">
 			<h2><i class="far fa-handshake fa-2x section-icon"></i><br>Companies & Organizations</h2>
 			<h4 id="org-slogan">"How many roads must a man walk down, before you call him a man?"</h4>
-			<div class="company-box" style="padding-right: 30px;">
+			<div class="company-box flex-box">
 				<div>
-					<a href="http://www.aiar.xjtu.edu.cn/">
+					<a href="http://www.aiar.xjtu.edu.cn/" target="_blank" target="_blank">
 						<img class="org-img" src="images/iair.PNG" alt="iair-logo">
 					</a>
 				</div>	  
 				<div>
-					<a href="https://www.intersystems.com/">
+					<a href="https://www.intersystems.com/" target="_blank" target="_blank">
 						<img class="org-img" src="images/IS.jpg" alt="is-logo">
 					</a>
 				</div>	
 				<div>
-					<a href="https://www.huaweicloud.com/en-us/">
+					<a href="https://www.huaweicloud.com/intl/en-us/" target="_blank" target="_blank">
 						<img class="org-img" src="images/huawei.png" alt="huawei">
 					</a>
 				</div>
 				<div>
-					<a href="https://www.fluentkey.com">
+					<a href="https://www.fluentkey.com" target="_blank" target="_blank">
 						<img class="org-img" src="images/fk.png" alt="fluentkey">
 					</a>
 				</div>
 				<div>
-					<a href="http://www.applyuniv.com/">
-						<img class="org-img" src="images/UV.png" alt="apply-univ">
+					<a href="https://mp.weixin.qq.com/s/XrnX4wOOQ21sIPyw6pzQRg" target="_blank" target="_blank">
+						<img class="org-img" src="images/SYSS.jpg" alt="S&Y">
 					</a>
 				</div>	
 				<div>
-					<a href="http://en.changhong.com/index.shtml">
+					<a href="https://www.chiq.com/" target="_blank" target="_blank">
 						<img class="org-img" src="images/ch.png" alt="chhanghong">
 					</a>
 				</div>	  
@@ -207,15 +208,37 @@
 			<i class="fas fa-laptop-code fa-2x section-icon"></i><br>Skills Overview
 		</h2>
 		<h3 id="skill-intro" class="skill-text"> "I can do this all day." -Steve Rogers</h3>
-		<div class="skill-icon-row">
-			<img src="https://skillicons.dev/icons?i=linux,git,bash,powershell,md,aws,docker,c,cpp,mongodb,mysql,django" />
-		</div>     
-		<div class="skill-icon-row">
-			<img src="https://skillicons.dev/icons?i=java,python,js,ts,html,css,nodejs,materialui,angular,vue,react,redux" /> 
-		</div>     
-		<div class="skill-icon-row">
-			<img src="https://skillicons.dev/icons?i=ae,ps,pr,vscode,eclipse,idea,bootstrap,latex,gcp,gitlab,github,stackoverflow" />   
-		</div>    
+		<div id="skill-icons">
+			<div class="skill-icons-row">
+				<img class="skill-icons-image" src="https://skillicons.dev/icons?i=linux,git,bash,powershell,md,aws,docker,c,cpp,mongodb,mysql,django" />
+			</div>     
+			<div class="skill-icons-row">
+				<img class="skill-icons-image" src="https://skillicons.dev/icons?i=java,python,js,ts,html,css,nodejs,materialui,angular,vue,react,redux" /> 
+			</div>     
+			<div class="skill-icons-row">
+				<img class="skill-icons-image" src="https://skillicons.dev/icons?i=ae,ps,pr,vscode,eclipse,idea,bootstrap,latex,gcp,gitlab,github,stackoverflow" />   
+			</div>   
+		</div>
+		<div id="mb-skill-icons" class="for-mobile">
+			<div class="skill-icons-row">
+				<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=linux,git,bash,graphql,mongodb,mysql" />
+			</div>     
+			<div class="skill-icons-row">
+				<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=java,python,js,ts,c,cpp" /> 
+			</div>     
+			<div class="skill-icons-row">
+				<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=ae,ps,pr,vscode,eclipse,idea" />   
+			</div>  
+			<div class="skill-icons-row">
+				<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=docker,html,css,bootstrap,express,django" /> 
+			</div>   
+			<div class="skill-icons-row">
+				<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=nodejs,materialui,angular,vue,react,redux" />
+			</div>     
+			<div class="skill-icons-row">
+				<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=latex,gcp,gitlab,stackoverflow,md,aws" /> 
+			</div>   
+		</div>
 		<h4 id="skill-footer" class="skill-text">
 			Trying hard to keep adding icons here. But also, many of my skills have no corresponding icon (yet). 
 		</h4> 
@@ -223,33 +246,33 @@
 	
 	<!-- social media -->
 	<section id="social-media">
-		<div class="container-fluid">
+		<div class="section-container">
 			<h2 id="follow-slogan">
 				<i class="fas fa-id-badge fa-2x section-icon"></i><br>Follow Me? Seriously?
 			</h2>
-			<div class="media-box">
+			<div class="media-box flex-box">
 				<div class="social-app">
-					<a href="https://www.facebook.com/TianshuangFu"><i class="fab fa-facebook fb fa-4x"></i>
+					<a href="https://www.facebook.com/TianshuangFu" target="_blank"><i class="fab fa-facebook fb fa-4x"></i>
 					<h3 class="app-name" id="fb-txt">FaceBook</h3></a>
 					<p>Basically I'm offline. </p>
 				</div>
 				<div class="social-app">
-					<a href="https://www.instagram.com/fts1109/"><i class="fab fa-instagram ins fa-4x"></i>
+					<a href="https://www.instagram.com/fts1109/" target="_blank"><i class="fab fa-instagram ins fa-4x"></i>
 					<h3 class="app-name" id="ins-txt">Instagram</h3></a>
 					<p>It's just fantasy.</p>
 				</div>	
 				<div class="social-app">
-					<a href="https://www.linkedin.com/in/tianshuang/"><i class="fab fa-linkedin linkedin fa-4x"></i>
+					<a href="https://www.linkedin.com/in/tianshuang/" target="_blank"><i class="fab fa-linkedin linkedin fa-4x"></i>
 					<h3 class="app-name" id="linkedin-txt">LinkedIn</h3></a>
 					<p>The best version of me.</p>
 				</div>	
 				<div class="social-app">
-					<a href="https://github.com/tsfu"><i class="fab fa-github github fa-4x" href=""></i>
+					<a href="https://github.com/tsfu" target="_blank"><i class="fab fa-github github fa-4x" href=""></i>
 					<h3 class="app-name" id="github-txt">Github</h3></a>
 					<p>Most of my commits are not here.</p>
 				</div>
 				<div class="social-app">
-					<a href="images/wechat.jpg"><i class="fab fa-weixin wechat fa-4x" href=""></i>
+					<a href="images/wechat.jpg" target="_blank" target="_blank"><i class="fab fa-weixin wechat fa-4x" href=""></i>
 					<h3 class="app-name" id="wechat-txt">WeChat</h3></a>
 					<p>I'm trying to get rid of it!</p>
 				</div>
