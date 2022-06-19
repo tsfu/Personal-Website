@@ -9,7 +9,7 @@ body{
 }
 
 .container-fluid{
-	padding: 2% 3% 4%;
+	padding: 2em 3em 3em;
 }
 
 /* ==================== Nav Bar ===================== */
@@ -29,7 +29,6 @@ body{
 	font-size: 90%;
 	margin-right: 10px;
 }
-
 
 /* ============================= Cover ====================== */
 
@@ -123,10 +122,14 @@ p{
 
 /* ================================ Education ========================*/
 
+.section-icon {
+	padding-bottom:20px;
+}
+
 #edu {
 	background-color:#F2F2F2;
 	text-align:center;
-	padding:4% 0% 2%;
+	padding:2rem 0 0.5rem;
 }
 #edu-slogan {
 	padding: 2rem 0 2rem;
@@ -135,9 +138,6 @@ p{
 .edu-intro {
 	padding-top: 1.5rem;
 	color: #888888;
-}
-.section-icon {
-	padding-bottom:20px;
 }
 .edu-img {
 	margin:50px 30px 40px;	
@@ -157,7 +157,7 @@ p{
 #org {
 	background-color:#DADADA;
 	text-align:center;
-	padding:4% 0% 2%;
+	padding:2rem 0 1rem;
 }
 #org-slogan {
 	padding: 2rem 0 2rem;
@@ -170,7 +170,7 @@ p{
 	justify-content: space-around;
 }
 .org-img {
-	margin:50px 20px 40px;	
+	margin:50px 20px 20px;	
 	height:150px; 
 	width:150px;
 }
@@ -180,50 +180,52 @@ p{
 
 /* ======================== Skillset ========================= */
 
-#skill-section {
+#skillset {
 	text-align:center;
 	line-height:1.25rem;
-	padding:6rem 2rem 4rem;
+	padding: 5rem 2rem 2rem;
 	background-color:#326b8b;
 }
 .skill-text {
 	color:#EAEAEA;
 }
 #skill-heading {
-	padding-bottom:2em;
-	
+	padding-bottom:1.5rem;	
 }
 #skill-intro {
-	padding-bottom:3em;
+	padding-bottom:2rem;
+	color:#e9e9e9;
 }
 .skill-icon-row {
-	margin-top: 2em;
+	margin-top: 1.5rem;
 }
 #skill-footer {
-	padding-top:2em;
+	padding:3em 0 2em;
+	color:#e9e9e9;
 }
 
 /* ======================== Social media ======================= */
 
-#features{
+#social-media{
 	color:#222222;
 	background-color:#EFEFEF;
-	padding-top:1%;
+	padding-top:1rem;
 }
 #follow-slogan{
-	text-align:center;
-	margin:2% 0 2%;
-	line-height:1.25rem;
+	text-align: center;
+	color:#454545;
+	margin: 2rem;
+	line-height: 3rem;
 }
 
 .media-box{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 }
-.fea{
+.social-app{
 	text-align:center;
-	padding:3%;
+	padding: 1.5rem;
 }
 
 .fb{
@@ -236,7 +238,7 @@ p{
 	color:#006097;
 }
 .github {
-	color:#340365;
+	color:#420a7b;
 }
 .wechat{
 	color:#07C563;
@@ -257,7 +259,7 @@ p{
 	color: #006097;
 }
 #github-txt:hover{
-	color:#340365;
+	color:#420a7b;
 }
 #wechat-txt:hover{
 	color:#07C563;
@@ -278,6 +280,5 @@ a:hover{
 .footer-txt{
 	font-family:"Montserrat", sans-serif;
 	line-height: 2rem;
-	font-size: 1.1rem;
 }
 
