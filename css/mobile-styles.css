@@ -47,11 +47,15 @@
 		font-weight: 100;
 		font-size: 1.4rem;		
 	}
-	#slogan, #slogan-intro, #spotify {
+	#slogan, #slogan-intro {
 		padding-top: 1rem;
 	}
 	#slogan-intro {
 		font-size: 1.5rem;
+	}
+
+	#spotify {
+		margin-top: 1rem;
 	}
 	.btn-bar {
 		margin-top: 1rem;

@@ -120,6 +120,7 @@ a:hover {
 #spotify {
 	width: 30%;
 	height: 480px;
+	border-radius: 15px;
 	margin-bottom: 1rem;
 } 
 
