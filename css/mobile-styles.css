@@ -9,7 +9,7 @@
 	}
 	#slogan {
 		font-weight: 400;
-		font-size: 2.5rem;
+		font-size: 3rem;
 	}
 	#sub-slogan, #slogan-intro {
 		font-weight: 200;
@@ -26,7 +26,7 @@
 	}
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1760px) {
 	#slogan-container {
 		width: 90vw;
 		text-align: center;
