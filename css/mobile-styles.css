@@ -156,9 +156,9 @@
 /* ==================== responsive fonts on small screen ====================== */
   @media screen and (max-width: 700px) {
 	#slogan  {		
-		font-size: 7.5vw;	
+		font-size: 8vw;	
 		font-weight: 100;
-		padding-top: 2rem;	
+		padding-top: 0.5rem;	
 	}
 	#sub-slogan {
 		font-size: 6vw;	
