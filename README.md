@@ -1,10 +1,10 @@
 ### Tianshuang's Personal Site: Introduction ###
 #### Version 1: Sep 2022 ####
 
-NOTE:
-  This branch is for archiving my 1st satisfied version (v1). Updates after Sep 22, 2022 will NOT be synced here.   
-  New updates will contain significant changes in design/layout/matrerials/tools that bumping version is needed.   
-  Latest version (hosting online) will always be on "master" branch.   
+NOTE:   
+  - This branch is for archiving my 1st satisfied version (v1). Updates after Sep 22, 2022 will NOT be synced here.   
+  - New updates will contain significant changes in design/layout/matrerials/tools that bumping version is needed.   
+  - Latest version (hosting online) will always be on "master" branch.   
   
 Update Log:
   - Jan 2019: Website was first published. All html and css files are written by my own, referring Udemy "Web Development" course taught by Angela.
