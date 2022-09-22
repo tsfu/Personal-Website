@@ -4,7 +4,7 @@ This is my personal website repository. It was first built when I was learning h
 #### Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io) ####
 
 Update Log:
-  - Jan 2019: Website was first published. All html and css files are written by my own, referring Udemy "Web Development" course taught by Angela.
+  - Jan 2019: Website was first published. All html and css files are written by myself, referring Udemy "Web Development" course taught by Angela.
   - Mar 2019: Website style re-designed. Added favorite musicians' pictures and quotes.
   - Oct 2019: Added summer internships and new school projects to slides section. Nav-Bar re-designed to host Chinese version resume.
   - Sep 2020: Added a new internship company, updated resume links for both English and Chinese versions.
@@ -14,9 +14,11 @@ Update Log:
   - Jun 2022: Update to use icon gallery in skill section. Added Github link. Adopted flex in some CSS. Removed CHN resume.      
   - Jun 2022: Update styles for mobile experience. Update to font awesome v6.1.1. Update links to open in new tab.   
   - Jun 2022: Update url to remove repo name suffix.   
+  - (snapshot v1 Sep 22 2022)
+  - Sep 2022: Update headline section to use full-screen background image (better responsiveness), move social media icons up to headline.   
 
 
 TODOs:
   - Get rid of Bootstrap v4 (update or remove).
-  - Better interactions/animations for mobile UX.
-  - Use responsive elements instead of @media query. (also because of Bootstrap v4 not ideal anymore here...)
+  - Better interactions/animations for mobile UX. 
+  - Update font awesome icons to newer version.
