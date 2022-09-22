@@ -57,7 +57,7 @@ a:hover {
 	flex-wrap: wrap;
 	background-color:#222222;
 	padding-left: 5vw;
-	height: 5vh;
+	height: 6vh;
 }
 #nav-logo {
 	font-size: 3vh;
@@ -90,8 +90,8 @@ a:hover {
 	align-items: flex-start;
 	justify-content: space-around;
 	flex-direction: column;
-	height: 94vh;
-	margin-top: 5vh;
+	height: 93vh;
+	margin-top: 6vh;
 	padding-left: 5vw;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url('../images/Cobain.gif');
 	background-repeat: no-repeat;
@@ -137,8 +137,7 @@ a:hover {
 	justify-content: space-around;
 }
 .app-icon {
-	padding-top: 3vh;
-	margin: 2vh 1.5vw 0;
+	margin: 5vh 1.5vw 0;
 	font-size: 1.75vh;
 }
 .app-icon:hover {
