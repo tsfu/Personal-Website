@@ -30,14 +30,22 @@ a:hover {
 }
 
 .section-container {
-	padding: 2rem 3rem 3rem;
+	padding: 5rem 3rem 4rem;
 }
+.sec-icon {
+	padding-bottom: 1.5rem;
+}
+
+#skill-slogan, #edu-slogan, #org-slogan {
+	padding: 2rem 0;
+}
+
 
 .for-mobile {
 	display: none;
 }
 
-/* =========================== Nav Bar ===================== */
+/* ============================== Nav Bar ======================== */
 
 #nav-bar {
 	position:fixed;
@@ -48,16 +56,15 @@ a:hover {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	background-color:#222222;
-	padding-left: 5rem;
-	height: 4rem;
+	padding-left: 5vw;
+	height: 5vh;
 }
 #nav-logo {
-	font-size: 2rem;
+	font-size: 3vh;
 	font-style: italic;
-	color: #e9e9e9;	
+	color: #c2c2c2;	
 }
 #nav-menu {
-	margin-right: 2rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -65,67 +72,92 @@ a:hover {
 }
 .nav-btn {
 	color: #A2A2A2;
-	font-size: 1.5rem;
-	padding-right: 1em;
+	font-size: 2vh;
+	padding-right: 3vw;
 }
 .nav-btn:hover {
-	color: #07C563;
+	color: #0b8fb4;
 }
 
 /* ============================= Cover ====================== */
 
 #title {
-	background-color:#313131;
+	background-color: #222222;
 	color:#FFFFFF;	
-	padding-top: 4rem;
 }
-
-.headline-box {
+#headline-box {
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 94vh;
+	margin-top: 5vh;
+	padding-left: 5vw;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url('../images/Cobain.gif');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
 }
 
 #slogan-container {
-	margin-left: 2rem;
-	margin-bottom: 1rem;
-	min-width: 700px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
 }
-
 #slogan {
-	font-size: 3.5rem;
-	font-weight: 300;
+	font-size: 6vh;
 	line-height: 1.5;
+	font-family: 'Londrina Solid', cursive;
 }
 #sub-slogan {
-	font-weight:light;
+	font-size: 3.5vh;
+	font-family: 'Londrina Solid', cursive;
 }
 #slogan-intro {
-	color:#AFAFAF;
+	color:#dadada;
 	font-family: 'Permanent Marker', cursive;
-	font-size: 2rem;
+	font-size: 2vh;
 	line-height: 1.5;
-	padding: 3rem 0 1rem;
-}
-
-#mainpic {
-	height: 480px;
-	width: auto;
-	max-width: 856px !important;
+	padding-top: 1vh;
 }
 
 #spotify {
-	width: 25%;
-	height: 480px;
+	width: 25vw;
+	height: 45vh;
+	margin-top: 1.5vh;
 	border-radius: 12px;
+	opacity: 0.5;
 } 
 
-.btn-bar {
-	margin-top: 2rem;
+/* ======================== Social media ======================= */
+.media-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
-.btn-lg {
-	margin: 5px 5px 5px 0;
+.app-icon {
+	padding-top: 3vh;
+	margin: 2vh 1.5vw 0;
+	font-size: 1.75vh;
+}
+.app-icon:hover {
+	transform: scale(1.3);
+}
+.fb {
+	color:#3963b8;
+}
+.ins {
+	color:#c17950;
+}
+.linkedin {
+	color:#3a7191;
+}
+.github {
+	color:#6c4490;
+}
+.wechat {
+	color:#399867;
 }
 
 /* ======================== Slide Highlights ======================= */
@@ -136,11 +168,12 @@ a:hover {
 	line-height:1.5rem;
 }
 .carousel-item {
-	padding: 5rem;
+	padding: 5.5rem;
 }
 
 .slide-title {
-	font-weight:bold; 
+	font-family: 'Londrina Solid', cursive;
+	font-size: 3rem;
 	margin-bottom: 1rem; 
 	color:#EDEDED;
 	transition: all .5s ease-in-out;
@@ -151,13 +184,14 @@ a:hover {
 .slide-intro {
 	color:#F2F2F2; 
 	padding: 1rem 0;
-	line-height: 3rem;
+	line-height: 2.5rem;
+	font-size: 1.5em;
 }
 .slide-img {
-	width:300px;
-	height:300px;
+	width:330px;
+	height:330px;
 	border-radius:100%;
-	margin: 2rem 0 4rem;
+	margin: 2.5rem 0 3.5rem;
 	transition: all .5s ease-in-out;
 }
 .slide-img:hover {
@@ -165,7 +199,8 @@ a:hover {
 }
 .slide-footnote {
 	color:#F2F2F2; 
-	font-size:1.25rem;
+	font-family: 'Londrina Solid', cursive;
+	font-size:1.5rem;
 	margin-top: 2rem;
 }
 
@@ -173,15 +208,7 @@ a:hover {
 
 #skillset {
 	text-align:center;
-	padding: 5rem 2rem 2rem;
 	background-color:#d4e1eb;
-}
-#skill-heading {
-	line-height:1.5rem;
-	padding-bottom:1.5rem;	
-}
-#skill-slogan {
-	padding-bottom:2rem;
 }
 #skill-icons {
 	padding: 1rem;
@@ -193,20 +220,11 @@ a:hover {
 	padding:3em 0 2em;
 }
 
-
 /* ================================ Education ========================*/
-
-.section-icon {
-	padding-bottom:20px;
-}
 
 #edu {
 	background-color:#F2F2F2;
 	text-align:center;
-	padding:2rem 0 0.5rem;
-}
-#edu-slogan {
-	padding: 2rem 0 2rem;
 }
 .edu-intro {
 	padding-top: 1.5rem;
@@ -230,10 +248,8 @@ a:hover {
 #org {
 	background-color:#dfebdc;
 	text-align:center;
-	padding:2rem 0 1rem;
 }
 #org-slogan {
-	padding: 2rem 0 2rem;
 	line-height: 3rem;
 }
 .company-box {
@@ -251,79 +267,13 @@ a:hover {
 	transform: scale(1.2);
 }
 
-/* ======================== Social media ======================= */
-
-#social-media {
-	color:#222222;
-	background-color:#EFEFEF;
-	padding-top:1rem;
-}
-#follow-slogan {
-	text-align: center;
-	color:#454545;
-	margin: 2rem;
-	line-height: 3rem;
-}
-
-.media-box {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
-}
-.social-app {
-	text-align:center;
-	padding: 1.5rem;
-}
-.social-app:hover {
-	transform: scale(1.25);
-}
-
-.fb {
-	color:#4867AA;
-}
-.ins {
-	color:#F07156;
-}
-.linkedin {
-	color:#006097;
-}
-.github {
-	color:#420a7b;
-}
-.wechat {
-	color:#07C563;
-}
-
-.app-name {
-	padding-top:7px;
-	color:#222222;
-}
-
-#fb-txt:hover {
-	color:#4867AA;
-}
-#ins-txt:hover {
-	color:#F07156;
-}
-#linkedin-txt:hover {
-	color: #006097;
-}
-#github-txt:hover {
-	color:#420a7b;
-}
-#wechat-txt:hover {
-	color:#07C563;
-}
-
-
 /* ============================ Footer ========================== */
 
 .footer {
 	background-color:#283E4A;
 	color:#AFAFAF;
 	text-align:center; 
-	padding: 1rem 0;
+	padding: 1.5rem 0;
 }
 .footer-txt {
 	font-family:"Montserrat", sans-serif;
