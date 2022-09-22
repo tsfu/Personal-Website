@@ -1,5 +1,7 @@
 ### Tianshuang's Personal Site: Introduction ###
-This is my personal website repository. It was first built when I was learning html/css/js with BootStarp 4 in Fall 2018. I plan to constantly update it while learning new web programming technology and skills. The site will be a good place to know about me and my recent situations. 
+This is my personal website repository. It was first built when I was learning html/css/js with BootStarp 4 in Fall 2018. I plan to constantly update it while learning new web programming technology and skills. The site will be a good place to know about me and my recent situations.   
+
+This branch (master) has the latest updates and is the version getting hosted online. History versions are archived into their own branches.   
 
 #### Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io) ####
 
@@ -14,9 +16,8 @@ Update Log:
   - Jun 2022: Update to use icon gallery in skill section. Added Github link. Adopted flex in some CSS. Removed CHN resume.      
   - Jun 2022: Update styles for mobile experience. Update to font awesome v6.1.1. Update links to open in new tab.   
   - Jun 2022: Update url to remove repo name suffix.   
-  - (snapshot v1 Sep 22 2022)
+  - (branched v1 Sep 22 2022)
   - Sep 2022: Update headline section to use full-screen background image (better responsiveness), move social media icons up to headline.   
-
 
 TODOs:
   - Get rid of Bootstrap v4 (update or remove).
