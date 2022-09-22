@@ -33,7 +33,7 @@
 		max-width: 100%;
 		margin: 6vh 0 -2vh;
 	}
-	#headline-box {
+	#headline-container {
 		height: auto;
 		max-height: none;
 		background-image: none;
@@ -51,13 +51,16 @@
 	}
 	#social-media-title {
 		display: block;
-		color: #c2c2c2;
-		margin: 5vh auto;
-		font-family: 'Londrina Solid', cursive;
+		margin-top: 5vh;
 	}
 	.app-icon {
-		font-size: 3vw;
-		margin: 1vh 5vw 8vh;
+		font-size: 3.5vw;
+		margin: 2vh 4vw;
+	}
+	#gallery-link {
+		display: block;
+		margin: 1vh 0 5vh;
+		font-size: 3vh;
 	}
 
 	.carousel-item {
@@ -87,6 +90,16 @@
 
 	#penn-img {
 		margin-top: 4rem;
+	}
+
+	.gallery-row {
+		flex-wrap: wrap;
+		margin: 0;
+	}
+	.photo-item {
+		margin: 0.5vh 0;
+		width: 92vw;
+		height: 69vw;
 	}
 
 	.footer-txt {

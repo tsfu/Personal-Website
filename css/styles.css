@@ -1,6 +1,5 @@
 
 /* =================== General styles ================== */
-
 html,body
 {
     width: 100%;
@@ -10,6 +9,10 @@ html,body
     overflow-x: hidden; 
 	color:#222222;
 	font-family:'Russo One', sans-serif;
+}
+
+.for-mobile {
+	display: none;
 }
 
 p {
@@ -25,24 +28,18 @@ a:hover {
 	padding: 2rem 3rem 3rem;
 }
 
-.section-container {
-	padding: 5rem 3rem 4rem;
+.sec-container {
+	text-align: center;
+	padding: 5rem 3rem 5rem;
 }
 .sec-icon {
 	padding-bottom: 1.5rem;
 }
-
-#skill-slogan, #edu-slogan, #org-slogan {
+.sec-slogan {
 	padding: 2rem 0;
 }
 
-
-.for-mobile {
-	display: none;
-}
-
 /* ============================== Nav Bar ======================== */
-
 #nav-bar {
 	position:fixed;
 	width: 100%;
@@ -76,12 +73,12 @@ a:hover {
 }
 
 /* ============================= Cover ====================== */
-
-#title {
+#headline {
+	font-family: 'Londrina Solid', cursive;
 	background-color: #222222;
-	color:#FFFFFF;	
+	color:#c2c2c2;	
 }
-#headline-box {
+#headline-container {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-around;
@@ -95,29 +92,26 @@ a:hover {
 	background-size: cover;
 }
 
-#slogan-container {
+#headline-content{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: column;
 }
+
 #slogan {
 	font-size: 6vh;
 	line-height: 1.5;
-	font-family: 'Londrina Solid', cursive;
 }
 #sub-slogan {
 	font-size: 3.5vh;
-	font-family: 'Londrina Solid', cursive;
 }
 #slogan-intro {
-	color:#dadada;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 2vh;
 	line-height: 1.5;
 	padding-top: 1vh;
 }
-
 #spotify {
 	width: 25vw;
 	height: 45vh;
@@ -156,7 +150,6 @@ a:hover {
 }
 
 /* ======================== Slide Highlights ======================= */
-
 #slides {
 	background-color:#7D7D7D;
 	text-align:center;
@@ -200,9 +193,7 @@ a:hover {
 }
 
 /* ======================== Skillset ========================= */
-
 #skillset {
-	text-align:center;
 	background-color:#d4e1eb;
 }
 #skill-icons {
@@ -216,10 +207,8 @@ a:hover {
 }
 
 /* ================================ Education ========================*/
-
 #edu {
 	background-color:#F2F2F2;
-	text-align:center;
 }
 .edu-img {
 	margin: 2rem auto 3rem;	
@@ -235,10 +224,8 @@ a:hover {
 }
 
 /* =========================== Company ============================== */
-
 #org {
 	background-color:#dfebdc;
-	text-align:center;
 }
 #org-slogan {
 	line-height: 3rem;
@@ -258,11 +245,49 @@ a:hover {
 	transform: scale(1.2);
 }
 
-/* ============================ Footer ========================== */
+/* ====================== Photo gallery =======================*/
+#gallery {
+	background-color: #333333;
+	color: #dddddd;
+}
+#gallery-container {
+	padding: 4rem 1rem 3vh;
+}
+.gallery-row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 2rem;
+}
+.photo-item {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	width: 30vw;
+	height: 22.5vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+.photo-footer {
+	margin: 0;
+	padding: 0.25rem 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color:#AFAFAF
+}
+h5.photo-footer:hover + p{
+	display: block;
+}
+p.photo-footer {
+	display: none;
+	font-family: "Montserrat", sans-serif;
+}
 
+/* ============================ Footer ========================== */
 .footer {
-	background-color:#283E4A;
-	color:#AFAFAF;
+	background-color:#3b596c;
+	color:#d8d8d8;
 	text-align:center; 
 	padding: 1.5rem 0;
 }
