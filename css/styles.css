@@ -17,10 +17,6 @@ p {
 	color:#A2A2A2;
 }
 
-img {
-	max-width: 90vw;
-}
-
 a:hover {
 	text-decoration: none;
 }
@@ -216,7 +212,7 @@ a:hover {
 	margin-top: 1.5rem;
 }
 #skill-footer {
-	padding:3em 0 2em;
+	padding-top: 3rem;
 }
 
 /* ================================ Education ========================*/
@@ -225,18 +221,14 @@ a:hover {
 	background-color:#F2F2F2;
 	text-align:center;
 }
-.edu-intro {
-	padding-top: 1.5rem;
-	color: #888888;
-}
 .edu-img {
-	margin:50px 30px 40px;	
+	margin: 2rem auto 3rem;	
 }
 .edu-img:hover {
 	transform: scale(1.2);
 }
 .edu-intro {
-	margin-top:5px; 
+	margin-top: 1.5rem; 
 	color:#888888; 
 	font-weight:light; 
 	font-size:120%;
@@ -277,5 +269,6 @@ a:hover {
 .footer-txt {
 	font-family:"Montserrat", sans-serif;
 	line-height: 2rem;
+	margin: 0;
 }
 

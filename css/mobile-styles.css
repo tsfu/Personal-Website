@@ -31,7 +31,7 @@
 		height: auto;
 		width: 100vw;
 		max-width: 100%;
-		margin-top: 6vh;
+		margin: 6vh 0 -2vh;
 	}
 	#headline-box {
 		height: auto;
@@ -76,10 +76,17 @@
 	}
 
 	#mb-skill-icons {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
 	}
 	#skill-slogan {
 		font-size: 3vh;
+	}
+
+	#penn-img {
+		margin-top: 4rem;
 	}
 
 	.footer-txt {
