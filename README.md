@@ -1,8 +1,11 @@
 ### Tianshuang's Personal Site: Introduction ###
-This is my personal website repository. It was first built when I was learning html/css/js with BootStarp 4 in Fall 2018. I plan to constantly update it while learning new web programming technology and skills. The site will be a good place to know about me and my recent situations. 
+#### Version 1: Sep 2022 ####
 
-#### Anyway, thank you for coming here! [Welcome to visit the website now.](https://tsfu.github.io) ####
-
+NOTE:
+  This branch is for archiving my 1st satisfied version (v1). Updates after Sep 22, 2022 will NOT be synced here.   
+  New updates will contain significant changes in design/layout/matrerials/tools that bumping version is needed.   
+  Latest version (hosting online) will always be on "master" branch.   
+  
 Update Log:
   - Jan 2019: Website was first published. All html and css files are written by my own, referring Udemy "Web Development" course taught by Angela.
   - Mar 2019: Website style re-designed. Added favorite musicians' pictures and quotes.
@@ -15,8 +18,3 @@ Update Log:
   - Jun 2022: Update styles for mobile experience. Update to font awesome v6.1.1. Update links to open in new tab.   
   - Jun 2022: Update url to remove repo name suffix.   
 
-
-TODOs:
-  - Get rid of Bootstrap v4 (update or remove).
-  - Better interactions/animations for mobile UX.
-  - Use responsive elements instead of @media query. (also because of Bootstrap v4 not ideal anymore here...)
