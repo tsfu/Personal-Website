@@ -59,6 +59,7 @@
 	}
 	#gallery-link {
 		display: block;
+		color: #dadada;
 		margin: 1vh 0 5vh;
 		font-size: 3vh;
 	}
