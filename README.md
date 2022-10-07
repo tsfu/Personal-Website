@@ -18,8 +18,8 @@ Update Log:
   - Jun 2022: Update url to remove repo name suffix.   
   - (branched v1 Sep 22 2022)
   - Sep 2022: Update headline section to use full-screen background image (better responsiveness), move social media icons up to headline.   
+  - Oct 2022: Update slides section with Bootstrap 5 upgrade.    
 
 TODOs:
-  - Get rid of Bootstrap v4 (update or remove).
   - Better interactions/animations for mobile UX. 
   - Update font awesome icons to newer version.
