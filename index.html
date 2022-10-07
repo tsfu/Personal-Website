@@ -7,15 +7,14 @@
    	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    	<title>Tianshuang's Site</title> 
    	<!--CSS-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/styles.css"> 
 	<link rel="stylesheet" href="css/mobile-styles.css">
    	<link rel="icon" href="images/favicon.ico">
 	<!--js-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 	<!--Google font-->
    	<link rel="preconnect" href="https://fonts.googleapis.com">
    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,72 +86,74 @@
 
 	<!--slides-->
 	<section id="slides"> 
-	<div id="my-carousel" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators" style="margin:3vh auto;">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-		</ol>
+	<div id="my-carousel" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+		</div>
 	  
 	    <div class="carousel-inner">
 			<div class="carousel-item active container-fluid" style="background-color:#6295a4;">
+				<h2 class="slide-title"> Kendall Square, Cambridge, MA - Present</h2>
+				<h4 class="slide-intro"> HealthShare: full-stack developer <br> 
+					HealthShare Operations scrum team. Development in ObjectScript, Angular, REST APIs and SQL.</h4>
 				<a class="text-muted" href="https://goo.gl/maps/bm3qkXHJeWQ2n5mx6" target="_blank" target="_blank">
-					<h2 class="slide-title"> Kendall Square, Cambridge, MA - Present</h2>
-					<h4 class="slide-intro"> HealthShare: full-stack developer <br> 
-						HealthShare Operations scrum team. Development in ObjectScript, Angular, REST APIs and SQL.</h4>
 					<img class="slide-img" src="images/OMD.jpg" alt="intersystems-healthshare">
 				</a><br>	 
 				<em class="slide-footnote">@ InterSystems Corporation, One Memorial Drive</em>
 			</div>
 
 			<div class="carousel-item container-fluid" style="background-color:#669573;">
+				<h2 class="slide-title"> Chestnut St, Philadelphia, PA - COVID Lockdown 2020</h2>
+				<h4 class="slide-intro"> PennOS: a UNIX style operating system, <br> 
+					designed & implemented an OS kernel with shell, file system, process management, and virtual memory. </h4>
 				<a class="text-muted" href="https://g.page/evophilly?share" target="_blank" target="_blank">
-					<h2 class="slide-title"> Chestnut St, Philadelphia, PA - COVID Lockdown 2020</h2>
-					<h4 class="slide-intro"> PennOS: a UNIX style operating system, <br> 
-						designed & implemented an OS kernel with shell, file system, process management, and virtual memory. </h4>
 					<img class="slide-img" src="images/philly.jpg" alt="Philly">
 				</a><br>	 
 				<em class="slide-footnote">@ My lovely home during pandemic, Evo Philly</em>
 			</div>
 			
 			<div class="carousel-item container-fluid" style="background-color:#9b885e;">
+				<h2 class="slide-title"> Chengdu City, Sichuan, China - Summmer 2019</h2>
+				<h4 class="slide-intro"> Front-end web development intern, <br> 
+					implemented Augular web apps and REST APIs for cloud testing application. </h4>
 				<a class="text-muted" href="https://goo.gl/maps/Qn59TECNsRp3Ss7r9" target="_blank" target="_blank">
-					<h2 class="slide-title"> Chengdu City, Sichuan, China - Summmer 2019</h2>
-					<h4 class="slide-intro"> Front-end web development intern, <br> 
-						implemented Augular web apps and REST APIs for cloud testing application. </h4>
 					<img class="slide-img" src="images/cd.jpg" alt="Chengdu">
 				</a><br>	 
 				<em class="slide-footnote">@ Cloud & AI Services Department, Huawei Technologies</em>
 			</div>
 		
 			<div class="carousel-item container-fluid" style="background-color:#7a7495;">			
+				<h2 class="slide-title"> U of Penn, Philadelphia, PA - Spring 2019 </h2>			
+				<h4 class="slide-intro"> Full stack web application design project, <br>
+					MEAN web application connected to several large scale, cloud hosting databases(MySql and MongoDB). </h4>
 				<a class="text-muted" href="https://goo.gl/maps/4r98sfo7r3PqBdAV8" target="_blank" target="_blank">
-					<h2 class="slide-title"> U of Penn, Philadelphia, PA - Spring 2019 </h2>			
-					<h4 class="slide-intro"> Full stack web application design project, <br>
-						MEAN web application connected to several large scale, cloud hosting databases(MySql and MongoDB). </h4>
 					<img class="slide-img" src="images/penn-eng.jpg" alt="penn-eng">
 				</a><br>	 
 				<em class="slide-footnote">@ Department of Computer & Information Science, Penn Engineering</em>
 			</div>
 		
 			<div class="carousel-item container-fluid" style="background-color:#6a4c4c;">
+				<h2 class="slide-title"> Xi'an City, Shaanxi, China - Spring 2018 </h2>
+				<h4 class="slide-intro"> Implemented human eye gaze estimation algorithm,<br> 
+					optimized its accurancy by 10%, now available for desktop applications.</h4>
 				<a class="text-muted" href="https://goo.gl/maps/61on9ctf1gJPEUys6" target="_blank" target="_blank">
-					<h2 class="slide-title"> Xi'an City, Shaanxi, China - Spring 2018 </h2>
-					<h4 class="slide-intro"> Implemented human eye gaze estimation algorithm,<br> 
-						 optimized its accurancy by 10%, now available for desktop applications.</h4>
 					<img class="slide-img" src="images/xj.jpg" alt="Xi'an">
 				</a><br>	 
 				<em class="slide-footnote">@ Institute of Artificial Intelligence and Robotics, Jiaotong University</em>
 			</div>	  
 		</div>
-		<a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon"></span>
-		</a>
-		<a class="carousel-control-next" href="#my-carousel" role="button" data-slide="next">
-			<span class="carousel-control-next-icon"></span>
-		</a>
+		<button class="carousel-control-prev" type="button" data-bs-target="#my-carousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#my-carousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
 	</div>	
     </section>
 

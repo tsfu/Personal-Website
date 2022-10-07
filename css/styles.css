@@ -20,7 +20,7 @@ p {
 	color:#A2A2A2;
 }
 
-a:hover {
+a, a:hover {
 	text-decoration: none;
 }
 
@@ -190,6 +190,9 @@ a:hover {
 }
 .carousel-item {
 	padding: 5.5rem;
+}
+.carousel-indicators {
+	margin: 3vh auto;
 }
 
 .slide-title {
