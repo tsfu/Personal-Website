@@ -19,6 +19,7 @@ Update Log:
   - (branched v1 Sep 22 2022)
   - Sep 2022: Update headline section to use full-screen background image (better responsiveness), move social media icons up to headline.   
   - Oct 2022: Update slides section with Bootstrap 5 upgrade.    
+  - Sep 2023: Update photos from 2023 summer.   
 
 TODOs:
   - Better interactions/animations for mobile UX. 
