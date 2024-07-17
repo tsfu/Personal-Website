@@ -7,14 +7,14 @@
    	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    	<title>Tianshuang's Site</title> 
    	<!--CSS-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/styles.css"> 
-	<link rel="stylesheet" href="css/mobile-styles.css">
    	<link rel="icon" href="images/favicon.ico">
 	<!--js-->
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 	<!--Google font-->
    	<link rel="preconnect" href="https://fonts.googleapis.com">
    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,205 +24,224 @@
  
  <body>
 	<!-- nav bar -->
-	<section id="top-bar">
-		<nav id="nav-bar">			
-			<a href="#slogan" id="nav-logo">TIANSHUANG (JOE) FU</a>
-			<div id="nav-menu" >      
-				<a class="nav-btn" href="tsfu_resume.pdf"><i class="fa-solid fa-file-lines"></i></i> Résumé</a>
-				<a class="nav-btn" href="mailto:tsfu@outlook.com"><i class="fas fa-envelope"></i> Email</a>
-				<div class="nav-btn dropdown">
-					<i class="fas fa-bars"></i> Browse
-					<div class="dropdown-content">
-					  <a href="#gallery">Gallery</a>
-					  <a href="#org">Experience</a>
-					  <a href="#edu">Education</a>
-					  <a href="#skillset">Skills</a>
-					</div>
+	<nav class="max-sm:hidden flex h-14 pl-10 items-center justify-between fixed w-full z-[999] bg-slate-900 text-gray-300">			
+		<a href="#top" class="italic hover:text-sky-500">TIANSHUANG (JOE) FU</a>
+		<div id="nav-menu" class="text-lg space-x-5 pr-10">      
+			<a class="hover:text-sky-500" href="tsfu_resume.pdf"><i class="fa-solid fa-file-lines"></i></i> Résumé</a>
+			<a class="hover:text-sky-500" href="mailto:tsfu@outlook.com"><i class="fas fa-envelope"></i> Email</a>
+			<div class="dropdown relative inline-block hover:text-sky-500">
+				<i class="fas fa-bars"></i> Browse
+				<div class="dropdown-content hidden absolute py-3 space-y-3 min-w-fit w-10 z-[1] bg-slate-900">
+					<a class="px-3 text-gray-300 hover:text-sky-500" href="#gallery">Gallery</a>
+					<a class="px-3 text-gray-300 hover:text-sky-500" href="#org">Experience</a>
+					<a class="px-3 text-gray-300 hover:text-sky-500" href="#edu">Education</a>
+					<a class="px-3 text-gray-300 hover:text-sky-500" href="#skills">Skills</a>
 				</div>
-			</div>   
-		</nav>
-		<nav id="mb-nav-bar" class="for-mobile" >			
-			<a href="#slogan" id="mb-nav-logo">TSFU</a>  
-			<a href="tsfu_resume.pdf" class="mb-nav-btn"><i class="fa-solid fa-file-lines"></i> Résumé</a>   
-		</nav>
-	</section>
+			</div>
+		</div>   
+	</nav>
+	<!-- nav bar on mobile -->
+	<nav class="sm:hidden flex h-16 items-center justify-around fixed w-full z-[999] bg-slate-900 text-xl text-gray-300">			
+		<a href="#top" class="italic hover:text-sky-500">TSFU</a>  
+		<a href="tsfu_resume.pdf" class="hover:text-sky-500"><i class="fa-solid fa-file-lines"></i> Résumé</a>   
+	</nav>
 
 	<!--headline-->
 	<section id="headline">	
-		<img id="mobile-mainpic" class="for-mobile" src="images/Cobain.gif" alt="Cobain">	
-		<div id="headline-container">
-			<div id="headline-content">
+		<div id="headline-container" class="h-screen pt-20 flex max-lg:justify-around lg:pl-10">
+			<div class="flex flex-col justify-around items-center lg:basis-1/3">
 				<!-- slogan -->
-				<h1 id="slogan">Finally, you are here.</h1>				
-				<h2 id="sub-slogan">Wanna try my playlist? </h2>
-				<h2 id="slogan-intro">"I think I'm dumb, or maybe just happy." <br>- "Dumb", Kurt Cobain, 1993.</h2>
+				<h1 id="slogan" class="text-center text-gray-300 text-3xl lg:text-5xl ">Finally, you are here.</h1>				
+				<h2 id="slogan-intro" class="text-center text-gray-300 text-xl">"I think I'm dumb, or maybe just happy." <br>- "Dumb", Kurt Cobain, 1993.</h2>		
 				<!-- spotify iframe -->
-				<iframe src="https://open.spotify.com/embed/playlist/41Lv07K3cjVLxVFNOjKd4L?utm_source=generator&theme=0" id="spotify" frameBorder="0" allowtransparency="true" allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+				<div class="max-sm:px-3 shrink w-full max-w-md opacity-75">
+					<iframe frameBorder="0" allowtransparency="true"
+						src="https://open.spotify.com/embed/playlist/41Lv07K3cjVLxVFNOjKd4L?utm_source=generator&theme=0" 
+						width="100%" height="410"
+						allow="autoplay; encrypted-media; picture-in-picture">
+					</iframe>
+				</div>
 				<!-- social media icons -->
-				<h2 id="social-media-title" class="for-mobile">Find Me Online...</h2>
-				<div class="media-box">
-					<div class="app-icon">
-						<a href="https://www.facebook.com/TianshuangFu" target="_blank"><i class="fab fa-facebook fb fa-3x"></i></a>
+				<div class="max-sm:px-3 w-full max-w-md flex items-center justify-between">
+					<div class="hover:scale-125">
+						<a href="https://www.facebook.com/TianshuangFu" target="_blank"><i class="fab fa-facebook text-blue-600 fa-3x"></i></a>
 					</div>
-					<div class="app-icon">
-						<a href="https://www.instagram.com/fts1109/" target="_blank"><i class="fab fa-instagram ins fa-3x"></i></a>
+					<div class="hover:scale-125">
+						<a href="https://www.instagram.com/fts1109/" target="_blank"><i class="fab fa-instagram text-orange-500 fa-3x"></i></a>
 					</div>	
-					<div class="app-icon">
-						<a href="https://www.linkedin.com/in/tianshuang/" target="_blank"><i class="fab fa-linkedin linkedin fa-3x"></i></a>
+					<div class="hover:scale-125">
+						<a href="https://www.linkedin.com/in/tianshuang/" target="_blank"><i class="fab fa-linkedin text-sky-700 fa-3x"></i></a>
 					</div>	
-					<div class="app-icon">
-						<a href="https://github.com/tsfu" target="_blank"><i class="fab fa-github github fa-3x" href=""></i></a>
+					<div class="hover:scale-125">
+						<a href="https://github.com/tsfu" target="_blank"><i class="fab fa-github text-violet-600 fa-3x" href=""></i></a>
 					</div>
-					<div class="app-icon">
-						<a href="images/wechat.jpg" target="_blank" target="_blank"><i class="fab fa-weixin wechat fa-3x" href=""></i></a>
+					<div class="hover:scale-125">
+						<a href="images/wechat.jpg" target="_blank" target="_blank"><i class="fab fa-weixin text-green-400 fa-3x" href=""></i></a>
 					</div>
 				</div>
-				<a id="gallery-link" class="for-mobile" href="#gallery">
-					<h4>Or visit gallery <i class="fas fa-arrow-right"></i></h4>
-				</a>
 			</div>
 		</div>
 	</section>
 
 	<!--slides-->
-	<section id="slides"> 
-	<div id="my-carousel" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-			<button type="button" data-bs-target="#my-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+	<div id="default-carousel" class="relative" data-carousel="slide">
+		<!-- Carousel wrapper -->
+		<div class="relative h-screen overflow-hidden">
+			<!-- Item 0 -->
+			<div class="hidden bg-[#352d77] duration-700 ease-in-out flex flex-col items-center text-center justify-evenly py-12" data-carousel-item>			
+				<h2 class="max-sm:text-xl text-3xl text-gray-300"> Windsor Castle, United Kingdom - Summer 2024 </h2>
+				<h2 class="max-sm:text-lg text-xl text-gray-200"> Relocated to InterSystems UKI office <br>
+					Working remotely for HealthSHare Operations, and living a different life right by the Royal Windsor Castle.</h2>
+				<a class="text-muted" href="https://maps.app.goo.gl/Z7CzBKoHg2NBTH1P9" target="_blank">
+					<img class="max-sm:w-64 max-sm:h-64 w-96 h-96 rounded-full ease-in-out duration-500 hover:scale-110" src="images/uki.jpg" class="absolute block w-full" alt="EyeGaze@XJTU">
+				</a>	 
+				<em class="max-sm:text-lg text-2xl text-gray-200">@ InterSystems UKI, Windsor England</em>
+			</div>
+			<!-- Item 1 -->
+			<div class="hidden bg-[#6295a4] duration-700 ease-in-out flex flex-col items-center text-center justify-evenly py-12" data-carousel-item>
+				<h2 class="max-sm:text-xl text-3xl text-gray-300"> Kendall Square, Cambridge MA - 2021 to 2024</h2>
+				<h2 class="max-sm:text-lg text-xl text-gray-200"> HealthShare: full-stack developer <br> 
+					HealthShare Operations scrum team. Development in ObjectScript, Angular, REST APIs and Docker/K8s.</h2>
+				<a class="text-muted" href="https://goo.gl/maps/bm3qkXHJeWQ2n5mx6" target="_blank"> 
+					<img class="max-sm:w-64 max-sm:h-64 w-96 h-96 rounded-full ease-in-out duration-500 hover:scale-110" src="images/OMD.jpg" alt="HealthShare@Cambridge">
+				</a>
+				<em class="max-sm:text-lg text-2xl text-gray-200">@ InterSystems Corporation, One Memorial Drive</em>
+			</div>
+			<!-- Item 2 -->
+			<div class="hidden bg-[#669573] duration-700 ease-in-out flex flex-col items-center text-center justify-evenly py-12" data-carousel-item>
+				<h2 class="max-sm:text-xl text-3xl text-gray-300"> Chestnut St, Philadelphia PA - COVID Lockdown 2020</h2>
+				<h2 class="max-sm:text-lg text-xl text-gray-200"> PennOS: a UNIX style operating system, <br> 
+					designed & implemented an OS kernel with shell, file system, process management, and virtual memory. </h2> 
+				<a class="text-muted" href="https://g.page/evophilly?share" target="_blank">	
+					<img class="max-sm:w-64 max-sm:h-64 w-96 h-96 rounded-full ease-in-out duration-500 hover:scale-110" src="images/philly.jpg" alt="PennOS@Philly">
+				</a>
+				<em class="max-sm:text-lg text-2xl text-gray-200">@ My lovely home during pandemic, Evo Philly</em>
+			</div>
+			<!-- Item 3 -->
+			<div class="hidden bg-[#9b885e] duration-700 ease-in-out flex flex-col items-center text-center justify-evenly py-12" data-carousel-item>
+				<h2 class="max-sm:text-xl text-3xl text-gray-300"> Chengdu, Sichuan China - Summmer 2019</h2>
+				<h2 class="max-sm:text-lg text-xl text-gray-200"> Front-end web development intern, <br> 
+					implemented Augular web apps and REST APIs for cloud testing application. </h2>
+				<a class="text-muted" href="https://goo.gl/maps/Qn59TECNsRp3Ss7r9" target="_blank">
+					<img class="max-sm:w-64 max-sm:h-64 w-96 h-96 rounded-full ease-in-out duration-500 hover:scale-110" src="images/cd.jpg" alt="HuaweiCloud@Chengdu">
+				</a>
+				<em class="max-sm:text-lg text-2xl text-gray-200">@ Cloud & AI Services Department, Huawei Technologies</em>
+			</div>
+			<!-- Item 4 -->
+			<div class="hidden bg-[#7a7495] duration-700 ease-in-out flex flex-col items-center text-center justify-evenly py-12" data-carousel-item>				
+				<h2 class="max-sm:text-xl text-3xl text-gray-300"> U of Penn, Philadelphia, PA - Spring 2019 </h2>			
+				<h2 class="max-sm:text-lg text-xl text-gray-200"> Full stack web application design project, <br>
+					MEAN-stack web application connected to several large scale, cloud hosting databases. </h2>
+				<a class="text-muted" href="https://goo.gl/maps/4r98sfo7r3PqBdAV8" target="_blank">
+					<img class="max-sm:w-64 max-sm:h-64 w-96 h-96 rounded-full ease-in-out duration-500 hover:scale-110" src="images/penn-eng.jpg" alt="UPenn@Philly">
+				</a>
+				<em class="max-sm:text-lg text-2xl text-gray-200">@ Department of Computer & Information Science, Penn Engineering</em>
+			</div>
+			<!-- Item 5 -->
+			<div class="hidden bg-[#6a4c4c] duration-700 ease-in-out flex flex-col items-center text-center justify-evenly py-12" data-carousel-item>			
+				<h2 class="max-sm:text-xl text-3xl text-gray-300"> Xi'an City, Shaanxi, China - Spring 2018 </h2>
+				<h2 class="max-sm:text-lg text-xl text-gray-200"> Implemented human eye gaze estimation algorithm,<br> 
+					optimized its accurancy by 10%, now available for desktop applications.</h2>
+				<a class="text-muted" href="https://goo.gl/maps/61on9ctf1gJPEUys6" target="_blank">
+					<img class="max-sm:w-64 max-sm:h-64 w-96 h-96 rounded-full ease-in-out duration-500 hover:scale-110" src="images/xj.jpg" class="absolute block w-full" alt="EyeGaze@XJTU">
+				</a>	 
+				<em class="max-sm:text-lg text-2xl text-gray-200">@ Institute of Artificial Intelligence and Robotics, Jiaotong University</em>
+			</div>
 		</div>
-	  
-	    <div class="carousel-inner">
-			<div class="carousel-item active container-fluid" style="background-color:#6295a4;">
-				<h2 class="slide-title"> Kendall Square, Cambridge, MA - Present</h2>
-				<h4 class="slide-intro"> HealthShare: full-stack developer <br> 
-					HealthShare Operations scrum team. Development in ObjectScript, Angular, REST APIs and Docker/K8s.</h4>
-				<a class="text-muted" href="https://goo.gl/maps/bm3qkXHJeWQ2n5mx6" target="_blank" target="_blank">
-					<img class="slide-img" src="images/OMD.jpg" alt="intersystems-healthshare">
-				</a><br>	 
-				<em class="slide-footnote">@ InterSystems Corporation, One Memorial Drive</em>
-			</div>
-
-			<div class="carousel-item container-fluid" style="background-color:#669573;">
-				<h2 class="slide-title"> Chestnut St, Philadelphia, PA - COVID Lockdown 2020</h2>
-				<h4 class="slide-intro"> PennOS: a UNIX style operating system, <br> 
-					designed & implemented an OS kernel with shell, file system, process management, and virtual memory. </h4>
-				<a class="text-muted" href="https://g.page/evophilly?share" target="_blank" target="_blank">
-					<img class="slide-img" src="images/philly.jpg" alt="Philly">
-				</a><br>	 
-				<em class="slide-footnote">@ My lovely home during pandemic, Evo Philly</em>
-			</div>
-			
-			<div class="carousel-item container-fluid" style="background-color:#9b885e;">
-				<h2 class="slide-title"> Chengdu City, Sichuan, China - Summmer 2019</h2>
-				<h4 class="slide-intro"> Front-end web development intern, <br> 
-					implemented Augular web apps and REST APIs for cloud testing application. </h4>
-				<a class="text-muted" href="https://goo.gl/maps/Qn59TECNsRp3Ss7r9" target="_blank" target="_blank">
-					<img class="slide-img" src="images/cd.jpg" alt="Chengdu">
-				</a><br>	 
-				<em class="slide-footnote">@ Cloud & AI Services Department, Huawei Technologies</em>
-			</div>
-		
-			<div class="carousel-item container-fluid" style="background-color:#7a7495;">			
-				<h2 class="slide-title"> U of Penn, Philadelphia, PA - Spring 2019 </h2>			
-				<h4 class="slide-intro"> Full stack web application design project, <br>
-					MEAN web application connected to several large scale, cloud hosting databases(MySql and MongoDB). </h4>
-				<a class="text-muted" href="https://goo.gl/maps/4r98sfo7r3PqBdAV8" target="_blank" target="_blank">
-					<img class="slide-img" src="images/penn-eng.jpg" alt="penn-eng">
-				</a><br>	 
-				<em class="slide-footnote">@ Department of Computer & Information Science, Penn Engineering</em>
-			</div>
-		
-			<div class="carousel-item container-fluid" style="background-color:#6a4c4c;">
-				<h2 class="slide-title"> Xi'an City, Shaanxi, China - Spring 2018 </h2>
-				<h4 class="slide-intro"> Implemented human eye gaze estimation algorithm,<br> 
-					optimized its accurancy by 10%, now available for desktop applications.</h4>
-				<a class="text-muted" href="https://goo.gl/maps/61on9ctf1gJPEUys6" target="_blank" target="_blank">
-					<img class="slide-img" src="images/xj.jpg" alt="Xi'an">
-				</a><br>	 
-				<em class="slide-footnote">@ Institute of Artificial Intelligence and Robotics, Jiaotong University</em>
-			</div>	  
+		<!-- Slider indicators -->
+		<div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+			<button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+			<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+			<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+			<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+			<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+			<button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#my-carousel" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
+		<!-- Slider controls -->
+		<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+			<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+				<svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+				</svg>
+				<span class="sr-only">Previous</span>
+			</span>
 		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#my-carousel" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
+		<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+			<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+				<svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+					<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+				</svg>
+				<span class="sr-only">Next</span>
+			</span>
 		</button>
-	</div>	
-    </section>
+	</div>
 
 	<!--skills-->
-	<section id="skillset">
-		<div class="sec-container">
-			<h1><i class="fas fa-laptop-code sec-icon"></i><br>Skills</h1>
-			<h3 class="sec-slogan"> "I can do this all day."  &ensp; - Steve Rogers</h3>
-			<div id="skill-icons">
+	<section id="skills" class="bg-gray-200">
+		<div class="py-16 space-y-10 text-center">
+			<h1 class="text-3xl leading-relaxed"><i class="fas fa-laptop-code fa-2x"></i><br>Skills</h1>
+			<h2 class="text-2xl max-sm:text-lg"> "I can do this all day."  &ensp; - Steve Rogers</h2>
+			<!-- wide skill icons on large screen -->
+			<div class="max-sm:hidden flex flex-col items-center justify-around space-y-5 p-3">
 				<div class="skill-icons-row">
-					<img class="skill-icons-image" src="https://skillicons.dev/icons?i=linux,vim,git,bash,powershell,md,latex,kubernetes,docker,c,cpp,mongodb,mysql,graphql,django" />
+					<img src="https://skillicons.dev/icons?i=linux,vim,git,bash,powershell,md,latex,kubernetes,docker,c,cpp,mongodb,mysql,graphql,django" />
 				</div>
 				<div class="skill-icons-row">
-					<img class="skill-icons-image" src="https://skillicons.dev/icons?i=js,ts,html,css,tailwind,jquery,bootstrap,express,nodejs,materialui,angular,vue,react,redux,nginx" /> 
+					<img src="https://skillicons.dev/icons?i=js,ts,html,css,tailwind,jquery,bootstrap,express,nodejs,materialui,angular,vue,react,redux,nginx" /> 
 				</div>
 				<div class="skill-icons-row">
-					<img class="skill-icons-image" src="https://skillicons.dev/icons?i=java,python,pytorch,tensorflow,ae,ps,pr,vscode,eclipse,idea,aws,gcp,gitlab,github,stackoverflow" />   
-				</div>
-			</div>
-			<div id="mb-skill-icons" class="for-mobile">
-				<div class="skill-icons-row">
-					<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=linux,git,vim,bash,md,latex" />
-				</div>
-				<div class="skill-icons-row">
-					<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=js,ts,html,css,c,cpp" /> 
-				</div>
-				<div class="skill-icons-row">
-					<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=java,python,tensorflow,pytorch,docker,kubernetes" /> 
-				</div>
-				<div class="skill-icons-row">
-					<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=materialui,tailwind,bootstrap,express,django,nginx" /> 
-				</div>
-				<div class="skill-icons-row">
-					<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=angular,vue,react,nodejs,redux,graphql" />
-				</div>
-				<div class="skill-icons-row">
-					<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=mongodb,mysql,aws,gcp,heroku,gitlab" /> 
-				</div>
-				<div class="skill-icons-row">
-					<img class="mb-skill-icons-image" src="https://skillicons.dev/icons?i=ae,ps,pr,vscode,eclipse,idea" />   
+					<img src="https://skillicons.dev/icons?i=java,python,pytorch,tensorflow,ae,ps,pr,vscode,eclipse,idea,aws,gcp,gitlab,github,stackoverflow" />   
 				</div>
 			</div>
-			<h4 id="skill-footer">
-				Still trying to add icons here...
-			</h4>
+			<!-- compact skill icons on small screen -->
+			<div class="sm:hidden flex flex-col items-center justify-around space-y-5">
+				<div class="skill-icons-row">
+					<img src="https://skillicons.dev/icons?i=linux,git,vim,bash,md,latex" />
+				</div>
+				<div class="skill-icons-row">
+					<img src="https://skillicons.dev/icons?i=js,ts,html,css,c,cpp" /> 
+				</div>
+				<div class="skill-icons-row">
+					<img src="https://skillicons.dev/icons?i=java,python,tensorflow,pytorch,docker,kubernetes" /> 
+				</div>
+				<div class="skill-icons-row">
+					<img src="https://skillicons.dev/icons?i=materialui,tailwind,bootstrap,express,django,nginx" /> 
+				</div>
+				<div class="skill-icons-row">
+					<img src="https://skillicons.dev/icons?i=angular,vue,react,nodejs,redux,graphql" />
+				</div>
+				<div class="skill-icons-row">
+					<img src="https://skillicons.dev/icons?i=mongodb,mysql,aws,gcp,heroku,gitlab" /> 
+				</div>
+				<div class="skill-icons-row">
+					<img src="https://skillicons.dev/icons?i=ae,ps,pr,vscode,eclipse,idea" />   
+				</div>
+			</div>
+			<p class="text-xl">Still trying to add icons here...</p>
 		</div>
 	</section>
  
 	<!-- education and experiences -->
 	<section id="edu">
-		<div class="sec-container">
-			<h1><i class="fas fa-graduation-cap sec-icon"></i><br>Education</h1>
-			<h3 class="sec-slogan">Not just degrees, but good old days...</h3>
-			<div class="row">
-				<div class="col-lg-6">
+		<div class="py-16 space-y-10 text-center bg-gray-300">
+			<h1 class="text-3xl leading-relaxed"><i class="fas fa-graduation-cap fa-2x"></i><br>Education</h1>
+			<h2 class="text-2xl max-sm:text-lg">Not just degrees, but good old days...</h2>
+			<div class="flex sm:flex-row max-sm:flex-col space-y-5">
+				<div class="basis-1/2 flex flex-col items-center justify-around space-y-3">
 					<a href="http://www.xjtu.edu.cn" target="_blank">
-						<img class="edu-img" src="images/XJTU.png" alt="xjtu-logo" style="height:90px; width:90px;">
+						<img class="w-32 pb-3 hover:scale-110 max-sm:scale-75" src="images/XJTU.png" alt="xjtu-logo">
 					</a>
-					<h3> Bachelor of Engineering in Automation</h3>
-					<p class="edu-intro"> School of Electronic & Information Engineering<br>
-						Awarded "Siyuan" Scholarship</p>
+					<p> Bachelor of Engineering in Automation</p>
+					<p> School of Electronic & Information Engineering</p>
+					<p> Awarded "Siyuan" Scholarship</p>
 				</div>
-				<div class="col-lg-6">
+				<div class="basis-1/2 flex flex-col items-center justify-between space-y-3">
 					<a href="https://upenn.edu" target="_blank">
-						<img id="penn-img" class="edu-img" src="images/PENN.png" alt="penn-logo" style="height:80px; width:290px;">
+						<img class="w-96 pb-3 hover:scale-110 max-sm:scale-75" src="images/PENN.png" alt="penn-logo">
 					</a>
-					<h4 style="margin-top:10px;"> Master of Computer & Information Technology </h4>
-					<h4 style="margin-top:10px;"> Master of Science in Systems Engineering </h4>				
-					<p class="edu-intro"> Penn Engineering + The Wharton School</p>
+					<p> Master of Computer & Information Technology </p>
+					<p> Master of Science in Systems Engineering </p>				
+					<p> Penn Engineering + The Wharton School</p>
 				</div>		  
 			</div>
 		</div>
@@ -230,38 +249,38 @@
 
 	<!-- company -->
 	<section id="org">
-		<div class="sec-container">
-			<h1><i class="far fa-handshake sec-icon"></i><br>Experience</h1>
-			<h4 id="org-slogan" class="sec-slogan">"How many roads must a man walk down, before you call him a man?"</h4>
-			<div class="company-box flex-box">
-				<div>
-					<a href="http://www.aiar.xjtu.edu.cn/" target="_blank" target="_blank">
-						<img class="org-img" src="images/iair.PNG" alt="iair-logo">
-					</a>
-				</div>	  
+		<div class="py-16 space-y-10 text-center bg-gray-200">
+			<h1 class="text-3xl leading-relaxed"><i class="far fa-handshake fa-2x"></i><br>Experience</h1>
+			<h2 class="text-2xl max-sm:text-lg">"How many roads must a man walk down, before you call him a man?"</h2>
+			<div class="flex sm:flex-row max-sm:flex-col items-center justify-around">
 				<div>
 					<a href="https://www.intersystems.com/" target="_blank" target="_blank">
-						<img class="org-img" src="images/IS.jpg" alt="is-logo">
+						<img class="m-10 h-36 w-36 hover:scale-125" src="images/IS.jpg" alt="is-logo">
 					</a>
 				</div>	
 				<div>
 					<a href="https://www.huaweicloud.com/intl/en-us/" target="_blank" target="_blank">
-						<img class="org-img" src="images/huawei.png" alt="huawei">
+						<img class="m-10 h-36 w-36 hover:scale-125" src="images/huawei.png" alt="huawei">
 					</a>
 				</div>
 				<div>
 					<a href="https://www.fluentkey.com" target="_blank" target="_blank">
-						<img class="org-img" src="images/fk.png" alt="fluentkey">
+						<img class="m-10 h-36 w-36 hover:scale-125" src="images/fk.png" alt="fluentkey">
 					</a>
 				</div>
 				<div>
+					<a href="http://www.aiar.xjtu.edu.cn/" target="_blank" target="_blank">
+						<img class="m-10 h-36 w-36 hover:scale-125" src="images/iair.PNG" alt="iair-logo">
+					</a>
+				</div>	  
+				<div>
 					<a href="https://mp.weixin.qq.com/s/XrnX4wOOQ21sIPyw6pzQRg" target="_blank" target="_blank">
-						<img class="org-img" src="images/SYSS.jpg" alt="S&Y">
+						<img class="m-10 h-36 w-36 hover:scale-125" src="images/SYSS.jpg" alt="S&Y">
 					</a>
 				</div>	
 				<div>
 					<a href="https://www.chiq.com/" target="_blank" target="_blank">
-						<img class="org-img" src="images/ch.png" alt="chhanghong">
+						<img class="m-10 h-36 w-36 hover:scale-125" src="images/ch.png" alt="chhanghong">
 					</a>
 				</div>	  
 			</div>
@@ -270,43 +289,41 @@
 
 	<!-- photo gallery -->
 	<section id="gallery">
-		<div id="gallery-container" class="sec-container">
-			<h1><i class="fa-solid fa-camera-retro sec-icon"></i><br>Gallery</h1>
-			<h3 class="sec-slogan"> Define Work-Life Balance?</h3>
-			<div class="gallery-row">
-				<div class="photo-item" style="background-image: url('gallery/p1.jpg');">
-					<h5 class="photo-footer"><em>Charles River 5KM Run</em></h5>
-					<p class="photo-footer">That "Boston Skyline" view on OMD never gets old, Aug 2023</p>
+		<div class="pt-16 pb-6 space-y-10 text-center text-gray-100 bg-gray-700">
+			<h1 class="text-3xl leading-relaxed"><i class="fa-solid fa-camera-retro fa-2x"></i><br>Gallery</h1>
+			<h2 class="text-2xl max-sm:text-lg"> Define Work-Life Balance?</h2>
+			<div class="grid sm:grid-cols-3">
+				<div class="photo-container m-1 h-72 flex flex-col justify-end group" style="background-image: url('gallery/windsor.jpg');">
+					<p class="py-2 opacity-75 bg-slate-600 text-gray-200"><em>Long Walk by the Windsor Castle</em></p>
+					<p class="py-2 opacity-75 bg-slate-500 text-gray-200 hidden group-hover:block font-[Montserrat]">Working from the beautilful royal town in the UK, Jul 2024</p>
+				</div>
+				<div class="photo-container m-1 h-72 flex flex-col justify-end group" style="background-image: url('gallery/charles.jpg');">
+					<p class="py-2 opacity-75 bg-slate-600 text-gray-200"><em>Charles River 5KM Run</em></p>
+					<p class="py-2 opacity-75 bg-slate-500 text-gray-200 hidden group-hover:block font-[Montserrat]">That "Boston Skyline" view on OMD never gets old, Aug 2023</p>
 				</div>						
-				<div class="photo-item" style="background-image: url('gallery/p2.jpg');">
-					<h5 class="photo-footer"><em>White Mountain Leaf Peeping</em></h5>
-					<p class="photo-footer">Fall foliage at Artist Bluff, White Mountain NH, Oct 2022</p>
+				<div class="photo-container m-1 h-72 flex flex-col justify-end group" style="background-image: url('gallery/white-mountain.jpg');">
+					<p class="py-2 opacity-75 bg-slate-600 text-gray-200"><em>White Mountain Leaf Peeping</em></p>
+					<p class="py-2 opacity-75 bg-slate-500 text-gray-200 hidden group-hover:block font-[Montserrat]">Fall foliage at Artist Bluff, White Mountain NH, Oct 2022</p>
 				</div>
-				<div class="photo-item" style="background-image: url('gallery/p3.jpg');">
-					<h5 class="photo-footer"><em>The Weeknd Show</em></h5>
-					<p class="photo-footer">"After Hours Til Dawn" Tour at Gillette Stadium, Jul 2022</p>
-				</div>
-			</div>
-			<div class="gallery-row">
-				<div class="photo-item" style="background-image: url('gallery/p4.jpg');">
-					<h5 class="photo-footer"><em>Way Down Hadestown!</em></h5>
-					<p class="photo-footer">Hadestown at Walter Kerr Theater, Broadway NYC, Dec 2023</p>
+				<div class="photo-container m-1 h-72 flex flex-col justify-end group" style="background-image: url('gallery/hadestown.jpg');">
+					<p class="py-2 opacity-75 bg-slate-600 text-gray-200"><em>Way Down Hadestown!</em></p>
+					<p class="py-2 opacity-75 bg-slate-500 text-gray-200 hidden group-hover:block font-[Montserrat]">Hadestown at Walter Kerr Theater, Broadway NYC, Dec 2023</p>
 				</div>		
-				<div class="photo-item" style="background-image: url('gallery/p5.jpg');">
-					<h5 class="photo-footer"><em>Revere Beach</em></h5>
-					<p class="photo-footer">Only need MBTA Blue Line to access the beach, Jun 2022</p>
+				<div class="photo-container m-1 h-72 flex flex-col justify-end group" style="background-image: url('gallery/weeknd.jpg');">
+					<p class="py-2 opacity-75 bg-slate-600 text-gray-200"><em>The Weeknd Show</em></p>
+					<p class="py-2 opacity-75 bg-slate-500 text-gray-200 hidden group-hover:block font-[Montserrat]">"After Hours Til Dawn" Tour at Gillette Stadium, Jul 2022</p>
 				</div>
-				<div class="photo-item" style="background-image: url('gallery/p6.jpg');">
-					<h5 class="photo-footer"><em>Hollywood Beach Resort, FL</em></h5>
-					<p class="photo-footer">InterSystems Global Summit 2023, Jun 2023</p>
+				<div class="photo-container m-1 h-72 flex flex-col justify-end group" style="background-image: url('gallery/beach.jpg');">
+					<p class="py-2 opacity-75 bg-slate-600 text-gray-200"><em>Hollywood Beach Resort, FL</em></p>
+					<p class="py-2 opacity-75 bg-slate-500 text-gray-200 hidden group-hover:block font-[Montserrat]">InterSystems Global Summit 2023, Jun 2023</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- footer -->
-	<footer class="footer">
-		<p class="footer-txt">
+	<footer class="text-center bg-cyan-900 text-gray-100 py-3">
+		<p class="footer-txt m-0 leading-loose font-[Montserrat]">
 			© Copyright 2024 Tianshuang (Joe) Fu, <br>
 			tsfu@outlook.com - Cambridge, MA 02142, USA<br>
 			All Rights Reserved.
