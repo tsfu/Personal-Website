@@ -16,10 +16,11 @@ Update Log:
   - Jun 2022: Update to use icon gallery in skill section. Added Github link. Adopted flex in some CSS. Removed CHN resume.      
   - Jun 2022: Update styles for mobile experience. Update to font awesome v6.1.1. Update links to open in new tab.   
   - Jun 2022: Update url to remove repo name suffix.   
-  - (branched v1 Sep 22 2022)
+  - (V1 branched on Sep 22 2022)
   - Sep 2022: Update headline section to use full-screen background image (better responsiveness), move social media icons up to headline.   
   - Oct 2022: Update slides section with Bootstrap 5 upgrade.    
   - Sep 2023: Update photos from 2023 summer.   
+  - (V2 branched on Jul 17 2024)
   - Jul 2024: Adopt tailwind, removed bootstrap. Retire complex css styles in files (removed all mobile-only styles). Update photos/slides.   
 
 TODOs 2024:
